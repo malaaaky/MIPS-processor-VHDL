@@ -1,0 +1,71 @@
+Running: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o D:/college/8) Sixth Semester/Computer Org. & Arch/1/Group14/Group14/Group14_21P0277/testbench_isim_beh.exe -prj D:/college/8) Sixth Semester/Computer Org. & Arch/1/Group14/Group14/Group14_21P0277/testbench_beh.prj work.testbench 
+ISim P.58f (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/college/8) Sixth Semester/Computer Org. & Arch/1/Group14/Group14/Group14_21P0277/regfilePackage.vhd" into library work
+Parsing VHDL file "D:/college/8) Sixth Semester/Computer Org. & Arch/1/Group14/Group14/Group14_21P0277/MUX.vhd" into library work
+Parsing VHDL file "D:/college/8) Sixth Semester/Computer Org. & Arch/1/Group14/Group14/Group14_21P0277/FLOPR.vhd" into library work
+Parsing VHDL file "D:/college/8) Sixth Semester/Computer Org. & Arch/1/Group14/Group14/Group14_21P0277/Decoder5to32.vhd" into library work
+Parsing VHDL file "D:/college/8) Sixth Semester/Computer Org. & Arch/1/Group14/Group14/Group14_21P0277/sl2.vhd" into library work
+Parsing VHDL file "D:/college/8) Sixth Semester/Computer Org. & Arch/1/Group14/Group14/Group14_21P0277/signext.vhd" into library work
+Parsing VHDL file "D:/college/8) Sixth Semester/Computer Org. & Arch/1/Group14/Group14/Group14_21P0277/RegisterFile.vhd" into library work
+Parsing VHDL file "D:/college/8) Sixth Semester/Computer Org. & Arch/1/Group14/Group14/Group14_21P0277/MUX2x1.vhd" into library work
+Parsing VHDL file "D:/college/8) Sixth Semester/Computer Org. & Arch/1/Group14/Group14/Group14_21P0277/MainDecoder.vhd" into library work
+Parsing VHDL file "D:/college/8) Sixth Semester/Computer Org. & Arch/1/Group14/Group14/Group14_21P0277/jsl2.vhd" into library work
+Parsing VHDL file "D:/college/8) Sixth Semester/Computer Org. & Arch/1/Group14/Group14/Group14_21P0277/InstMUX.vhd" into library work
+Parsing VHDL file "D:/college/8) Sixth Semester/Computer Org. & Arch/1/Group14/Group14/Group14_21P0277/datapathPackage.vhd" into library work
+Parsing VHDL file "D:/college/8) Sixth Semester/Computer Org. & Arch/1/Group14/Group14/Group14_21P0277/ControllerPackage.vhd" into library work
+Parsing VHDL file "D:/college/8) Sixth Semester/Computer Org. & Arch/1/Group14/Group14/Group14_21P0277/ALUDecoder.vhd" into library work
+Parsing VHDL file "D:/college/8) Sixth Semester/Computer Org. & Arch/1/Group14/Group14/Group14_21P0277/ALU.vhd" into library work
+Parsing VHDL file "D:/college/8) Sixth Semester/Computer Org. & Arch/1/Group14/Group14/Group14_21P0277/Adder.vhd" into library work
+Parsing VHDL file "D:/college/8) Sixth Semester/Computer Org. & Arch/1/Group14/Group14/Group14_21P0277/MIPSPackage.vhd" into library work
+Parsing VHDL file "D:/college/8) Sixth Semester/Computer Org. & Arch/1/Group14/Group14/Group14_21P0277/datapath.vhd" into library work
+Parsing VHDL file "D:/college/8) Sixth Semester/Computer Org. & Arch/1/Group14/Group14/Group14_21P0277/Controller.vhd" into library work
+Parsing VHDL file "D:/college/8) Sixth Semester/Computer Org. & Arch/1/Group14/Group14/Group14_21P0277/MIPS.vhd" into library work
+Parsing VHDL file "D:/college/8) Sixth Semester/Computer Org. & Arch/1/Group14/Group14/Group14_21P0277/MainPackage.vhd" into library work
+Parsing VHDL file "D:/college/8) Sixth Semester/Computer Org. & Arch/1/Group14/Group14/Group14_21P0277/imem.vhd" into library work
+Parsing VHDL file "D:/college/8) Sixth Semester/Computer Org. & Arch/1/Group14/Group14/Group14_21P0277/dmem.vhd" into library work
+Parsing VHDL file "D:/college/8) Sixth Semester/Computer Org. & Arch/1/Group14/Group14/Group14_21P0277/Main_module.vhd" into library work
+Parsing VHDL file "D:/college/8) Sixth Semester/Computer Org. & Arch/1/Group14/Group14/Group14_21P0277/test.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_signed
+Compiling package numeric_std
+Compiling package mainpackage
+Compiling package mipspackage
+Compiling package textio
+Compiling package std_logic_textio
+Compiling package std_logic_unsigned
+Compiling package datapathpackage
+Compiling package controllerpackage
+Compiling package regfilepackage
+Compiling architecture behavioral of entity MUX [mux_default]
+Compiling architecture behavioral of entity FLOPR [flopr_default]
+Compiling architecture behavioral of entity Decoder5to32 [decoder5to32_default]
+Compiling architecture behavioral of entity RegisterFile [registerfile_default]
+Compiling architecture behavioral of entity ALU [alu_default]
+Compiling architecture behavioral of entity InstMUX [instmux_default]
+Compiling architecture behavioral of entity MUX2x1 [mux2x1_default]
+Compiling architecture behavioral of entity signext [signext_default]
+Compiling architecture behavioral of entity Adder [adder_default]
+Compiling architecture behavioral of entity sl2 [sl2_default]
+Compiling architecture behavioral of entity jsl2 [jsl2_default]
+Compiling architecture behavioral of entity datapath [datapath_default]
+Compiling architecture behavioral of entity MainDecoder [maindecoder_default]
+Compiling architecture behavioral of entity ALUDecoder [aludecoder_default]
+Compiling architecture behavioral of entity Controller [controller_default]
+Compiling architecture behavioral of entity MIPS [mips_default]
+Compiling architecture behave of entity imem [imem_default]
+Compiling architecture behave of entity dmem [dmem_default]
+Compiling architecture behavioral of entity Main_module [main_module_default]
+Compiling architecture test of entity testbench
+Time Resolution for simulation is 1ps.
+Waiting for 25 sub-compilation(s) to finish...
+Compiled 52 VHDL Units
+Built simulation executable D:/college/8) Sixth Semester/Computer Org. & Arch/1/Group14/Group14/Group14_21P0277/testbench_isim_beh.exe
+Fuse Memory Usage: 39364 KB
+Fuse CPU Usage: 1187 ms

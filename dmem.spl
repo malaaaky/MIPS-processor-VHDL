@@ -1,0 +1,8 @@
+[Inputs]
+clk
+we
+=a[31:0]=
+=wd[31:0]=
+[Outputs]
+=rd[31:0]=
+[BiDir]

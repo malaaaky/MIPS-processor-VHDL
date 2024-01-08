@@ -1,0 +1,1 @@
+xst -intstyle ise -filter "D:/college/8) Sixth Semester/Computer Org. & Arch/1/Group14/Group14/Group14_21P0277/iseconfig/filter.filter" -ifn "D:/college/8) Sixth Semester/Computer Org. & Arch/1/Group14/Group14/Group14_21P0277/Controller.xst" -ofn "D:/college/8) Sixth Semester/Computer Org. & Arch/1/Group14/Group14/Group14_21P0277/Controller.syr" 

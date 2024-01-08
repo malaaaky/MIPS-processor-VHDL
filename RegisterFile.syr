@@ -1,0 +1,1265 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.28 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.30 secs
+ 
+--> Reading design: RegisterFile.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "RegisterFile.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "RegisterFile"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : RegisterFile
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "E:\Group14_21P0277\regfilePackage.vhd" into library work
+Parsing package <regfilePackage>.
+Parsing package body <regfilePackage>.
+Parsing VHDL file "E:\Group14_21P0277\MUX.vhd" into library work
+Parsing entity <MUX>.
+Parsing architecture <Behavioral> of entity <mux>.
+Parsing VHDL file "E:\Group14_21P0277\FLOPR.vhd" into library work
+Parsing entity <FLOPR>.
+Parsing architecture <Behavioral> of entity <flopr>.
+Parsing VHDL file "E:\Group14_21P0277\Decoder5to32.vhd" into library work
+Parsing entity <Decoder5to32>.
+Parsing architecture <Behavioral> of entity <decoder5to32>.
+Parsing VHDL file "E:\Group14_21P0277\RegisterFile.vhd" into library work
+Parsing entity <RegisterFile>.
+Parsing architecture <Behavioral> of entity <registerfile>.
+WARNING:HDLCompiler:946 - "E:\Group14_21P0277\RegisterFile.vhd" Line 25: Actual for formal port load is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "E:\Group14_21P0277\RegisterFile.vhd" Line 26: Actual for formal port load is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "E:\Group14_21P0277\RegisterFile.vhd" Line 27: Actual for formal port load is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "E:\Group14_21P0277\RegisterFile.vhd" Line 28: Actual for formal port load is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "E:\Group14_21P0277\RegisterFile.vhd" Line 29: Actual for formal port load is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "E:\Group14_21P0277\RegisterFile.vhd" Line 30: Actual for formal port load is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "E:\Group14_21P0277\RegisterFile.vhd" Line 31: Actual for formal port load is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "E:\Group14_21P0277\RegisterFile.vhd" Line 32: Actual for formal port load is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "E:\Group14_21P0277\RegisterFile.vhd" Line 33: Actual for formal port load is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "E:\Group14_21P0277\RegisterFile.vhd" Line 34: Actual for formal port load is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "E:\Group14_21P0277\RegisterFile.vhd" Line 35: Actual for formal port load is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "E:\Group14_21P0277\RegisterFile.vhd" Line 36: Actual for formal port load is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "E:\Group14_21P0277\RegisterFile.vhd" Line 37: Actual for formal port load is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "E:\Group14_21P0277\RegisterFile.vhd" Line 38: Actual for formal port load is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "E:\Group14_21P0277\RegisterFile.vhd" Line 39: Actual for formal port load is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "E:\Group14_21P0277\RegisterFile.vhd" Line 40: Actual for formal port load is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "E:\Group14_21P0277\RegisterFile.vhd" Line 41: Actual for formal port load is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "E:\Group14_21P0277\RegisterFile.vhd" Line 42: Actual for formal port load is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "E:\Group14_21P0277\RegisterFile.vhd" Line 43: Actual for formal port load is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "E:\Group14_21P0277\RegisterFile.vhd" Line 44: Actual for formal port load is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "E:\Group14_21P0277\RegisterFile.vhd" Line 45: Actual for formal port load is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "E:\Group14_21P0277\RegisterFile.vhd" Line 46: Actual for formal port load is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "E:\Group14_21P0277\RegisterFile.vhd" Line 47: Actual for formal port load is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "E:\Group14_21P0277\RegisterFile.vhd" Line 48: Actual for formal port load is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "E:\Group14_21P0277\RegisterFile.vhd" Line 49: Actual for formal port load is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "E:\Group14_21P0277\RegisterFile.vhd" Line 50: Actual for formal port load is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "E:\Group14_21P0277\RegisterFile.vhd" Line 51: Actual for formal port load is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "E:\Group14_21P0277\RegisterFile.vhd" Line 52: Actual for formal port load is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "E:\Group14_21P0277\RegisterFile.vhd" Line 53: Actual for formal port load is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "E:\Group14_21P0277\RegisterFile.vhd" Line 54: Actual for formal port load is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "E:\Group14_21P0277\RegisterFile.vhd" Line 55: Actual for formal port load is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "E:\Group14_21P0277\RegisterFile.vhd" Line 56: Actual for formal port load is neither a static name nor a globally static expression
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <RegisterFile> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <MUX> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <FLOPR> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "E:\Group14_21P0277\FLOPR.vhd" Line 22: load should be on the sensitivity list of the process
+
+Elaborating entity <Decoder5to32> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <RegisterFile>.
+    Related source file is "E:\Group14_21P0277\RegisterFile.vhd".
+    Summary:
+	no macro.
+Unit <RegisterFile> synthesized.
+
+Synthesizing Unit <MUX>.
+    Related source file is "E:\Group14_21P0277\MUX.vhd".
+    Found 32-bit 32-to-1 multiplexer for signal <Y> created at line 43.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX> synthesized.
+
+Synthesizing Unit <FLOPR>.
+    Related source file is "E:\Group14_21P0277\FLOPR.vhd".
+    Found 32-bit register for signal <Q>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <FLOPR> synthesized.
+
+Synthesizing Unit <Decoder5to32>.
+    Related source file is "E:\Group14_21P0277\Decoder5to32.vhd".
+WARNING:Xst:737 - Found 1-bit latch for signal <D<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred  32 Latch(s).
+	inferred  42 Multiplexer(s).
+Unit <Decoder5to32> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 32
+ 32-bit register                                       : 32
+# Latches                                              : 32
+ 1-bit latch                                           : 32
+# Multiplexers                                         : 44
+ 1-bit 2-to-1 multiplexer                              : 42
+ 32-bit 32-to-1 multiplexer                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 1024
+ Flip-Flops                                            : 1024
+# Multiplexers                                         : 44
+ 1-bit 2-to-1 multiplexer                              : 42
+ 32-bit 32-to-1 multiplexer                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:3001 - This design contains one or more registers or latches with an active
+   asynchronous set and asynchronous reset. While this circuit can be built,
+   it creates a sub-optimal implementation in terms of area, power and
+   performance. For a more optimal implementation Xilinx highly recommends
+   one of the following:
+
+          1) Remove either the set or reset from all registers and latches if
+             not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Artix7 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    D_31 in unit <Decoder5to32>
+    D_0 in unit <Decoder5to32>
+    D_1 in unit <Decoder5to32>
+    D_17 in unit <Decoder5to32>
+    D_18 in unit <Decoder5to32>
+    D_19 in unit <Decoder5to32>
+    D_21 in unit <Decoder5to32>
+    D_22 in unit <Decoder5to32>
+    D_20 in unit <Decoder5to32>
+    D_23 in unit <Decoder5to32>
+    D_24 in unit <Decoder5to32>
+    D_25 in unit <Decoder5to32>
+    D_26 in unit <Decoder5to32>
+    D_27 in unit <Decoder5to32>
+    D_28 in unit <Decoder5to32>
+    D_30 in unit <Decoder5to32>
+    D_2 in unit <Decoder5to32>
+    D_29 in unit <Decoder5to32>
+    D_3 in unit <Decoder5to32>
+    D_4 in unit <Decoder5to32>
+    D_5 in unit <Decoder5to32>
+    D_6 in unit <Decoder5to32>
+    D_7 in unit <Decoder5to32>
+    D_8 in unit <Decoder5to32>
+    D_10 in unit <Decoder5to32>
+    D_11 in unit <Decoder5to32>
+    D_9 in unit <Decoder5to32>
+    D_12 in unit <Decoder5to32>
+    D_13 in unit <Decoder5to32>
+    D_15 in unit <Decoder5to32>
+    D_16 in unit <Decoder5to32>
+    D_14 in unit <Decoder5to32>
+
+
+Optimizing unit <RegisterFile> ...
+
+Optimizing unit <Decoder5to32> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block RegisterFile, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1024
+ Flip-Flops                                            : 1024
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : RegisterFile.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 865
+#      GND                         : 1
+#      LUT2                        : 32
+#      LUT3                        : 64
+#      LUT5                        : 64
+#      LUT6                        : 640
+#      MUXF7                       : 64
+# FlipFlops/Latches                : 1056
+#      FDCE                        : 1024
+#      LD                          : 32
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 113
+#      IBUF                        : 49
+#      OBUF                        : 64
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1056  out of  126800     0%  
+ Number of Slice LUTs:                  800  out of  63400     1%  
+    Number used as Logic:               800  out of  63400     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1216
+   Number with an unused Flip Flop:     160  out of   1216    13%  
+   Number with an unused LUT:           416  out of   1216    34%  
+   Number of fully used LUT-FF pairs:   640  out of   1216    52%  
+   Number of unique control sets:        64
+
+IO Utilization: 
+ Number of IOs:                         114
+ Number of bonded IOBs:                 114  out of    210    54%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRL/BUFHCEs:         1  out of    128     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 1024  |
+Dec/D_31_G(Dec/D_31_G:O)           | NONE(*)(Dec/D_31)      | 1     |
+Dec/D_0_G(Dec/D_0_G:O)             | NONE(*)(Dec/D_0)       | 1     |
+Dec/D_1_G(Dec/D_1_G:O)             | NONE(*)(Dec/D_1)       | 1     |
+Dec/D_17_G(Dec/D_17_G:O)           | NONE(*)(Dec/D_17)      | 1     |
+Dec/D_18_G(Dec/D_18_G:O)           | NONE(*)(Dec/D_18)      | 1     |
+Dec/D_19_G(Dec/D_19_G:O)           | NONE(*)(Dec/D_19)      | 1     |
+Dec/D_21_G(Dec/D_21_G:O)           | NONE(*)(Dec/D_21)      | 1     |
+Dec/D_22_G(Dec/D_22_G:O)           | NONE(*)(Dec/D_22)      | 1     |
+Dec/D_20_G(Dec/D_20_G:O)           | NONE(*)(Dec/D_20)      | 1     |
+Dec/D_23_G(Dec/D_23_G:O)           | NONE(*)(Dec/D_23)      | 1     |
+Dec/D_24_G(Dec/D_24_G:O)           | NONE(*)(Dec/D_24)      | 1     |
+Dec/D_25_G(Dec/D_25_G:O)           | NONE(*)(Dec/D_25)      | 1     |
+Dec/D_26_G(Dec/D_26_G:O)           | NONE(*)(Dec/D_26)      | 1     |
+Dec/D_27_G(Dec/D_27_G:O)           | NONE(*)(Dec/D_27)      | 1     |
+Dec/D_28_G(Dec/D_28_G:O)           | NONE(*)(Dec/D_28)      | 1     |
+Dec/D_30_G(Dec/D_30_G:O)           | NONE(*)(Dec/D_30)      | 1     |
+Dec/D_2_G(Dec/D_2_G:O)             | NONE(*)(Dec/D_2)       | 1     |
+Dec/D_29_G(Dec/D_29_G:O)           | NONE(*)(Dec/D_29)      | 1     |
+Dec/D_3_G(Dec/D_3_G:O)             | NONE(*)(Dec/D_3)       | 1     |
+Dec/D_4_G(Dec/D_4_G:O)             | NONE(*)(Dec/D_4)       | 1     |
+Dec/D_5_G(Dec/D_5_G:O)             | NONE(*)(Dec/D_5)       | 1     |
+Dec/D_6_G(Dec/D_6_G:O)             | NONE(*)(Dec/D_6)       | 1     |
+Dec/D_7_G(Dec/D_7_G:O)             | NONE(*)(Dec/D_7)       | 1     |
+Dec/D_8_G(Dec/D_8_G:O)             | NONE(*)(Dec/D_8)       | 1     |
+Dec/D_10_G(Dec/D_10_G:O)           | NONE(*)(Dec/D_10)      | 1     |
+Dec/D_11_G(Dec/D_11_G:O)           | NONE(*)(Dec/D_11)      | 1     |
+Dec/D_9_G(Dec/D_9_G:O)             | NONE(*)(Dec/D_9)       | 1     |
+Dec/D_12_G(Dec/D_12_G:O)           | NONE(*)(Dec/D_12)      | 1     |
+Dec/D_13_G(Dec/D_13_G:O)           | NONE(*)(Dec/D_13)      | 1     |
+Dec/D_15_G(Dec/D_15_G:O)           | NONE(*)(Dec/D_15)      | 1     |
+Dec/D_16_G(Dec/D_16_G:O)           | NONE(*)(Dec/D_16)      | 1     |
+Dec/D_14_G(Dec/D_14_G:O)           | NONE(*)(Dec/D_14)      | 1     |
+-----------------------------------+------------------------+-------+
+(*) These 32 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 1.505ns
+   Maximum output required time after clock: 2.230ns
+   Maximum combinational path delay: 2.144ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 3072 / 3072
+-------------------------------------------------------------------------
+Offset:              0.981ns (Levels of Logic = 2)
+  Source:            write_ena (PAD)
+  Destination:       Reg31/Q_31 (FF)
+  Destination Clock: clk rising
+
+  Data Path: write_ena to Reg31/Q_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            32   0.001   0.402  write_ena_IBUF (write_ena_IBUF)
+     LUT2:I1->O           32   0.097   0.386  load[0]_write_ena_AND_1_o1 (load[0]_write_ena_AND_1_o)
+     FDCE:CE                   0.095          Reg0/Q_0
+    ----------------------------------------
+    Total                      0.981ns (0.193ns logic, 0.788ns route)
+                                       (19.7% logic, 80.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Dec/D_31_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            write_sel<0> (PAD)
+  Destination:       Dec/D_31 (LATCH)
+  Destination Clock: Dec/D_31_G falling
+
+  Data Path: write_sel<0> to Dec/D_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  write_sel_0_IBUF (write_sel_0_IBUF)
+     LUT5:I0->O            2   0.097   0.515  Dec/A[4]_PWR_9_o_AND_34_o1 (Dec/A[4]_PWR_9_o_AND_34_o)
+     LUT3:I0->O            1   0.097   0.000  Dec/D_31_D (Dec/D_31_D)
+     LD:D                     -0.028          Dec/D_31
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Dec/D_0_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            write_sel<0> (PAD)
+  Destination:       Dec/D_0 (LATCH)
+  Destination Clock: Dec/D_0_G falling
+
+  Data Path: write_sel<0> to Dec/D_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  write_sel_0_IBUF (write_sel_0_IBUF)
+     LUT5:I0->O            2   0.097   0.515  Dec/A[4]_GND_9_o_AND_96_o1 (Dec/A[4]_GND_9_o_AND_96_o)
+     LUT3:I0->O            1   0.097   0.000  Dec/D_0_D (Dec/D_0_D)
+     LD:D                     -0.028          Dec/D_0
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Dec/D_1_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            write_sel<2> (PAD)
+  Destination:       Dec/D_1 (LATCH)
+  Destination Clock: Dec/D_1_G falling
+
+  Data Path: write_sel<2> to Dec/D_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  write_sel_2_IBUF (write_sel_2_IBUF)
+     LUT5:I0->O            2   0.097   0.515  Dec/A[4]_GND_9_o_AND_94_o1 (Dec/A[4]_GND_9_o_AND_94_o)
+     LUT3:I0->O            1   0.097   0.000  Dec/D_1_D (Dec/D_1_D)
+     LD:D                     -0.028          Dec/D_1
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Dec/D_17_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            write_sel<4> (PAD)
+  Destination:       Dec/D_17 (LATCH)
+  Destination Clock: Dec/D_17_G falling
+
+  Data Path: write_sel<4> to Dec/D_17
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  write_sel_4_IBUF (write_sel_4_IBUF)
+     LUT5:I0->O            2   0.097   0.515  Dec/A[4]_GND_9_o_AND_62_o1 (Dec/A[4]_GND_9_o_AND_62_o)
+     LUT3:I0->O            1   0.097   0.000  Dec/D_17_D (Dec/D_17_D)
+     LD:D                     -0.028          Dec/D_17
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Dec/D_18_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            write_sel<4> (PAD)
+  Destination:       Dec/D_18 (LATCH)
+  Destination Clock: Dec/D_18_G falling
+
+  Data Path: write_sel<4> to Dec/D_18
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  write_sel_4_IBUF (write_sel_4_IBUF)
+     LUT5:I0->O            2   0.097   0.515  Dec/A[4]_GND_9_o_AND_60_o1 (Dec/A[4]_GND_9_o_AND_60_o)
+     LUT3:I0->O            1   0.097   0.000  Dec/D_18_D (Dec/D_18_D)
+     LD:D                     -0.028          Dec/D_18
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Dec/D_19_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            write_sel<0> (PAD)
+  Destination:       Dec/D_19 (LATCH)
+  Destination Clock: Dec/D_19_G falling
+
+  Data Path: write_sel<0> to Dec/D_19
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  write_sel_0_IBUF (write_sel_0_IBUF)
+     LUT5:I0->O            2   0.097   0.515  Dec/A[4]_GND_9_o_AND_58_o1 (Dec/A[4]_GND_9_o_AND_58_o)
+     LUT3:I0->O            1   0.097   0.000  Dec/D_19_D (Dec/D_19_D)
+     LD:D                     -0.028          Dec/D_19
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Dec/D_21_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            write_sel<0> (PAD)
+  Destination:       Dec/D_21 (LATCH)
+  Destination Clock: Dec/D_21_G falling
+
+  Data Path: write_sel<0> to Dec/D_21
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  write_sel_0_IBUF (write_sel_0_IBUF)
+     LUT5:I0->O            2   0.097   0.515  Dec/A[4]_GND_9_o_AND_54_o1 (Dec/A[4]_GND_9_o_AND_54_o)
+     LUT3:I0->O            1   0.097   0.000  Dec/D_21_D (Dec/D_21_D)
+     LD:D                     -0.028          Dec/D_21
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Dec/D_22_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            write_sel<1> (PAD)
+  Destination:       Dec/D_22 (LATCH)
+  Destination Clock: Dec/D_22_G falling
+
+  Data Path: write_sel<1> to Dec/D_22
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  write_sel_1_IBUF (write_sel_1_IBUF)
+     LUT5:I0->O            2   0.097   0.515  Dec/A[4]_GND_9_o_AND_52_o1 (Dec/A[4]_GND_9_o_AND_52_o)
+     LUT3:I0->O            1   0.097   0.000  Dec/D_22_D (Dec/D_22_D)
+     LD:D                     -0.028          Dec/D_22
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Dec/D_20_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            write_sel<4> (PAD)
+  Destination:       Dec/D_20 (LATCH)
+  Destination Clock: Dec/D_20_G falling
+
+  Data Path: write_sel<4> to Dec/D_20
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  write_sel_4_IBUF (write_sel_4_IBUF)
+     LUT5:I0->O            2   0.097   0.515  Dec/A[4]_GND_9_o_AND_56_o1 (Dec/A[4]_GND_9_o_AND_56_o)
+     LUT3:I0->O            1   0.097   0.000  Dec/D_20_D (Dec/D_20_D)
+     LD:D                     -0.028          Dec/D_20
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Dec/D_23_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            write_sel<4> (PAD)
+  Destination:       Dec/D_23 (LATCH)
+  Destination Clock: Dec/D_23_G falling
+
+  Data Path: write_sel<4> to Dec/D_23
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  write_sel_4_IBUF (write_sel_4_IBUF)
+     LUT5:I0->O            2   0.097   0.515  Dec/A[4]_GND_9_o_AND_50_o1 (Dec/A[4]_GND_9_o_AND_50_o)
+     LUT3:I0->O            1   0.097   0.000  Dec/D_23_D (Dec/D_23_D)
+     LD:D                     -0.028          Dec/D_23
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Dec/D_24_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            write_sel<4> (PAD)
+  Destination:       Dec/D_24 (LATCH)
+  Destination Clock: Dec/D_24_G falling
+
+  Data Path: write_sel<4> to Dec/D_24
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  write_sel_4_IBUF (write_sel_4_IBUF)
+     LUT5:I0->O            2   0.097   0.515  Dec/A[4]_GND_9_o_AND_48_o1 (Dec/A[4]_GND_9_o_AND_48_o)
+     LUT3:I0->O            1   0.097   0.000  Dec/D_24_D (Dec/D_24_D)
+     LD:D                     -0.028          Dec/D_24
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Dec/D_25_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            write_sel<3> (PAD)
+  Destination:       Dec/D_25 (LATCH)
+  Destination Clock: Dec/D_25_G falling
+
+  Data Path: write_sel<3> to Dec/D_25
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  write_sel_3_IBUF (write_sel_3_IBUF)
+     LUT5:I0->O            2   0.097   0.515  Dec/A[4]_GND_9_o_AND_46_o1 (Dec/A[4]_GND_9_o_AND_46_o)
+     LUT3:I0->O            1   0.097   0.000  Dec/D_25_D (Dec/D_25_D)
+     LD:D                     -0.028          Dec/D_25
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Dec/D_26_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            write_sel<3> (PAD)
+  Destination:       Dec/D_26 (LATCH)
+  Destination Clock: Dec/D_26_G falling
+
+  Data Path: write_sel<3> to Dec/D_26
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  write_sel_3_IBUF (write_sel_3_IBUF)
+     LUT5:I0->O            2   0.097   0.515  Dec/A[4]_GND_9_o_AND_44_o1 (Dec/A[4]_GND_9_o_AND_44_o)
+     LUT3:I0->O            1   0.097   0.000  Dec/D_26_D (Dec/D_26_D)
+     LD:D                     -0.028          Dec/D_26
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Dec/D_27_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            write_sel<4> (PAD)
+  Destination:       Dec/D_27 (LATCH)
+  Destination Clock: Dec/D_27_G falling
+
+  Data Path: write_sel<4> to Dec/D_27
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  write_sel_4_IBUF (write_sel_4_IBUF)
+     LUT5:I0->O            2   0.097   0.515  Dec/A[4]_GND_9_o_AND_42_o1 (Dec/A[4]_GND_9_o_AND_42_o)
+     LUT3:I0->O            1   0.097   0.000  Dec/D_27_D (Dec/D_27_D)
+     LD:D                     -0.028          Dec/D_27
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Dec/D_28_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            write_sel<3> (PAD)
+  Destination:       Dec/D_28 (LATCH)
+  Destination Clock: Dec/D_28_G falling
+
+  Data Path: write_sel<3> to Dec/D_28
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  write_sel_3_IBUF (write_sel_3_IBUF)
+     LUT5:I0->O            2   0.097   0.515  Dec/A[4]_GND_9_o_AND_40_o1 (Dec/A[4]_GND_9_o_AND_40_o)
+     LUT3:I0->O            1   0.097   0.000  Dec/D_28_D (Dec/D_28_D)
+     LD:D                     -0.028          Dec/D_28
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Dec/D_30_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            write_sel<4> (PAD)
+  Destination:       Dec/D_30 (LATCH)
+  Destination Clock: Dec/D_30_G falling
+
+  Data Path: write_sel<4> to Dec/D_30
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  write_sel_4_IBUF (write_sel_4_IBUF)
+     LUT5:I0->O            2   0.097   0.515  Dec/A[4]_GND_9_o_AND_36_o1 (Dec/A[4]_GND_9_o_AND_36_o)
+     LUT3:I0->O            1   0.097   0.000  Dec/D_30_D (Dec/D_30_D)
+     LD:D                     -0.028          Dec/D_30
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Dec/D_2_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            write_sel<2> (PAD)
+  Destination:       Dec/D_2 (LATCH)
+  Destination Clock: Dec/D_2_G falling
+
+  Data Path: write_sel<2> to Dec/D_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  write_sel_2_IBUF (write_sel_2_IBUF)
+     LUT5:I0->O            2   0.097   0.515  Dec/A[4]_GND_9_o_AND_92_o1 (Dec/A[4]_GND_9_o_AND_92_o)
+     LUT3:I0->O            1   0.097   0.000  Dec/D_2_D (Dec/D_2_D)
+     LD:D                     -0.028          Dec/D_2
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Dec/D_29_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            write_sel<4> (PAD)
+  Destination:       Dec/D_29 (LATCH)
+  Destination Clock: Dec/D_29_G falling
+
+  Data Path: write_sel<4> to Dec/D_29
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  write_sel_4_IBUF (write_sel_4_IBUF)
+     LUT5:I0->O            2   0.097   0.515  Dec/A[4]_GND_9_o_AND_38_o1 (Dec/A[4]_GND_9_o_AND_38_o)
+     LUT3:I0->O            1   0.097   0.000  Dec/D_29_D (Dec/D_29_D)
+     LD:D                     -0.028          Dec/D_29
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Dec/D_3_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            write_sel<1> (PAD)
+  Destination:       Dec/D_3 (LATCH)
+  Destination Clock: Dec/D_3_G falling
+
+  Data Path: write_sel<1> to Dec/D_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  write_sel_1_IBUF (write_sel_1_IBUF)
+     LUT5:I0->O            2   0.097   0.515  Dec/A[4]_GND_9_o_AND_90_o1 (Dec/A[4]_GND_9_o_AND_90_o)
+     LUT3:I0->O            1   0.097   0.000  Dec/D_3_D (Dec/D_3_D)
+     LD:D                     -0.028          Dec/D_3
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Dec/D_4_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            write_sel<4> (PAD)
+  Destination:       Dec/D_4 (LATCH)
+  Destination Clock: Dec/D_4_G falling
+
+  Data Path: write_sel<4> to Dec/D_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  write_sel_4_IBUF (write_sel_4_IBUF)
+     LUT5:I0->O            2   0.097   0.515  Dec/A[4]_GND_9_o_AND_88_o1 (Dec/A[4]_GND_9_o_AND_88_o)
+     LUT3:I0->O            1   0.097   0.000  Dec/D_4_D (Dec/D_4_D)
+     LD:D                     -0.028          Dec/D_4
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Dec/D_5_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            write_sel<0> (PAD)
+  Destination:       Dec/D_5 (LATCH)
+  Destination Clock: Dec/D_5_G falling
+
+  Data Path: write_sel<0> to Dec/D_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  write_sel_0_IBUF (write_sel_0_IBUF)
+     LUT5:I0->O            2   0.097   0.515  Dec/A[4]_GND_9_o_AND_86_o1 (Dec/A[4]_GND_9_o_AND_86_o)
+     LUT3:I0->O            1   0.097   0.000  Dec/D_5_D (Dec/D_5_D)
+     LD:D                     -0.028          Dec/D_5
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Dec/D_6_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            write_sel<1> (PAD)
+  Destination:       Dec/D_6 (LATCH)
+  Destination Clock: Dec/D_6_G falling
+
+  Data Path: write_sel<1> to Dec/D_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  write_sel_1_IBUF (write_sel_1_IBUF)
+     LUT5:I0->O            2   0.097   0.515  Dec/A[4]_GND_9_o_AND_84_o1 (Dec/A[4]_GND_9_o_AND_84_o)
+     LUT3:I0->O            1   0.097   0.000  Dec/D_6_D (Dec/D_6_D)
+     LD:D                     -0.028          Dec/D_6
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Dec/D_7_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            write_sel<0> (PAD)
+  Destination:       Dec/D_7 (LATCH)
+  Destination Clock: Dec/D_7_G falling
+
+  Data Path: write_sel<0> to Dec/D_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  write_sel_0_IBUF (write_sel_0_IBUF)
+     LUT5:I0->O            2   0.097   0.515  Dec/A[4]_GND_9_o_AND_82_o1 (Dec/A[4]_GND_9_o_AND_82_o)
+     LUT3:I0->O            1   0.097   0.000  Dec/D_7_D (Dec/D_7_D)
+     LD:D                     -0.028          Dec/D_7
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Dec/D_8_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            write_sel<2> (PAD)
+  Destination:       Dec/D_8 (LATCH)
+  Destination Clock: Dec/D_8_G falling
+
+  Data Path: write_sel<2> to Dec/D_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  write_sel_2_IBUF (write_sel_2_IBUF)
+     LUT5:I0->O            2   0.097   0.515  Dec/A[4]_GND_9_o_AND_80_o1 (Dec/A[4]_GND_9_o_AND_80_o)
+     LUT3:I0->O            1   0.097   0.000  Dec/D_8_D (Dec/D_8_D)
+     LD:D                     -0.028          Dec/D_8
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Dec/D_10_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            write_sel<1> (PAD)
+  Destination:       Dec/D_10 (LATCH)
+  Destination Clock: Dec/D_10_G falling
+
+  Data Path: write_sel<1> to Dec/D_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  write_sel_1_IBUF (write_sel_1_IBUF)
+     LUT5:I0->O            2   0.097   0.515  Dec/A[4]_GND_9_o_AND_76_o1 (Dec/A[4]_GND_9_o_AND_76_o)
+     LUT3:I0->O            1   0.097   0.000  Dec/D_10_D (Dec/D_10_D)
+     LD:D                     -0.028          Dec/D_10
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Dec/D_11_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            write_sel<3> (PAD)
+  Destination:       Dec/D_11 (LATCH)
+  Destination Clock: Dec/D_11_G falling
+
+  Data Path: write_sel<3> to Dec/D_11
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  write_sel_3_IBUF (write_sel_3_IBUF)
+     LUT5:I0->O            2   0.097   0.515  Dec/A[4]_GND_9_o_AND_74_o1 (Dec/A[4]_GND_9_o_AND_74_o)
+     LUT3:I0->O            1   0.097   0.000  Dec/D_11_D (Dec/D_11_D)
+     LD:D                     -0.028          Dec/D_11
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Dec/D_9_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            write_sel<0> (PAD)
+  Destination:       Dec/D_9 (LATCH)
+  Destination Clock: Dec/D_9_G falling
+
+  Data Path: write_sel<0> to Dec/D_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  write_sel_0_IBUF (write_sel_0_IBUF)
+     LUT5:I0->O            2   0.097   0.515  Dec/A[4]_GND_9_o_AND_78_o1 (Dec/A[4]_GND_9_o_AND_78_o)
+     LUT3:I0->O            1   0.097   0.000  Dec/D_9_D (Dec/D_9_D)
+     LD:D                     -0.028          Dec/D_9
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Dec/D_12_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            write_sel<3> (PAD)
+  Destination:       Dec/D_12 (LATCH)
+  Destination Clock: Dec/D_12_G falling
+
+  Data Path: write_sel<3> to Dec/D_12
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  write_sel_3_IBUF (write_sel_3_IBUF)
+     LUT5:I0->O            2   0.097   0.515  Dec/A[4]_GND_9_o_AND_72_o1 (Dec/A[4]_GND_9_o_AND_72_o)
+     LUT3:I0->O            1   0.097   0.000  Dec/D_12_D (Dec/D_12_D)
+     LD:D                     -0.028          Dec/D_12
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Dec/D_13_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            write_sel<3> (PAD)
+  Destination:       Dec/D_13 (LATCH)
+  Destination Clock: Dec/D_13_G falling
+
+  Data Path: write_sel<3> to Dec/D_13
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  write_sel_3_IBUF (write_sel_3_IBUF)
+     LUT5:I0->O            2   0.097   0.515  Dec/A[4]_GND_9_o_AND_70_o1 (Dec/A[4]_GND_9_o_AND_70_o)
+     LUT3:I0->O            1   0.097   0.000  Dec/D_13_D (Dec/D_13_D)
+     LD:D                     -0.028          Dec/D_13
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Dec/D_15_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            write_sel<0> (PAD)
+  Destination:       Dec/D_15 (LATCH)
+  Destination Clock: Dec/D_15_G falling
+
+  Data Path: write_sel<0> to Dec/D_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  write_sel_0_IBUF (write_sel_0_IBUF)
+     LUT5:I0->O            2   0.097   0.515  Dec/A[4]_GND_9_o_AND_66_o1 (Dec/A[4]_GND_9_o_AND_66_o)
+     LUT3:I0->O            1   0.097   0.000  Dec/D_15_D (Dec/D_15_D)
+     LD:D                     -0.028          Dec/D_15
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Dec/D_16_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            write_sel<2> (PAD)
+  Destination:       Dec/D_16 (LATCH)
+  Destination Clock: Dec/D_16_G falling
+
+  Data Path: write_sel<2> to Dec/D_16
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  write_sel_2_IBUF (write_sel_2_IBUF)
+     LUT5:I0->O            2   0.097   0.515  Dec/A[4]_GND_9_o_AND_64_o1 (Dec/A[4]_GND_9_o_AND_64_o)
+     LUT3:I0->O            1   0.097   0.000  Dec/D_16_D (Dec/D_16_D)
+     LD:D                     -0.028          Dec/D_16
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Dec/D_14_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            write_sel<3> (PAD)
+  Destination:       Dec/D_14 (LATCH)
+  Destination Clock: Dec/D_14_G falling
+
+  Data Path: write_sel<3> to Dec/D_14
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  write_sel_3_IBUF (write_sel_3_IBUF)
+     LUT5:I0->O            2   0.097   0.515  Dec/A[4]_GND_9_o_AND_68_o1 (Dec/A[4]_GND_9_o_AND_68_o)
+     LUT3:I0->O            1   0.097   0.000  Dec/D_14_D (Dec/D_14_D)
+     LD:D                     -0.028          Dec/D_14
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 2048 / 64
+-------------------------------------------------------------------------
+Offset:              2.230ns (Levels of Logic = 4)
+  Source:            Reg26/Q_31 (FF)
+  Destination:       data1<31> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: Reg26/Q_31 to data1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.361   0.561  Reg26/Q_31 (Reg26/Q_31)
+     LUT6:I2->O            1   0.097   0.556  MUX1/Mmux_Y_873 (MUX1/Mmux_Y_873)
+     LUT6:I2->O            1   0.097   0.000  MUX1/Mmux_Y_324 (MUX1/Mmux_Y_324)
+     MUXF7:I1->O           1   0.279   0.279  MUX1/Mmux_Y_2_f7_23 (data1_31_OBUF)
+     OBUF:I->O                 0.000          data1_31_OBUF (data1<31>)
+    ----------------------------------------
+    Total                      2.230ns (0.834ns logic, 1.396ns route)
+                                       (37.4% logic, 62.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1344 / 64
+-------------------------------------------------------------------------
+Delay:               2.144ns (Levels of Logic = 5)
+  Source:            read_sel1<1> (PAD)
+  Destination:       data1<31> (PAD)
+
+  Data Path: read_sel1<1> to data1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           256   0.001   0.834  read_sel1_1_IBUF (read_sel1_1_IBUF)
+     LUT6:I0->O            1   0.097   0.556  MUX1/Mmux_Y_81 (MUX1/Mmux_Y_81)
+     LUT6:I2->O            1   0.097   0.000  MUX1/Mmux_Y_3 (MUX1/Mmux_Y_3)
+     MUXF7:I1->O           1   0.279   0.279  MUX1/Mmux_Y_2_f7 (data1_0_OBUF)
+     OBUF:I->O                 0.000          data1_0_OBUF (data1<0>)
+    ----------------------------------------
+    Total                      2.144ns (0.474ns logic, 1.670ns route)
+                                       (22.1% logic, 77.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Dec/D_0_G      |         |    1.429|         |         |
+Dec/D_10_G     |         |    1.429|         |         |
+Dec/D_11_G     |         |    1.429|         |         |
+Dec/D_12_G     |         |    1.429|         |         |
+Dec/D_13_G     |         |    1.429|         |         |
+Dec/D_14_G     |         |    1.429|         |         |
+Dec/D_15_G     |         |    1.429|         |         |
+Dec/D_16_G     |         |    1.429|         |         |
+Dec/D_17_G     |         |    1.429|         |         |
+Dec/D_18_G     |         |    1.429|         |         |
+Dec/D_19_G     |         |    1.429|         |         |
+Dec/D_1_G      |         |    1.429|         |         |
+Dec/D_20_G     |         |    1.429|         |         |
+Dec/D_21_G     |         |    1.429|         |         |
+Dec/D_22_G     |         |    1.429|         |         |
+Dec/D_23_G     |         |    1.429|         |         |
+Dec/D_24_G     |         |    1.429|         |         |
+Dec/D_25_G     |         |    1.429|         |         |
+Dec/D_26_G     |         |    1.429|         |         |
+Dec/D_27_G     |         |    1.429|         |         |
+Dec/D_28_G     |         |    1.429|         |         |
+Dec/D_29_G     |         |    1.429|         |         |
+Dec/D_2_G      |         |    1.429|         |         |
+Dec/D_30_G     |         |    1.429|         |         |
+Dec/D_31_G     |         |    1.429|         |         |
+Dec/D_3_G      |         |    1.429|         |         |
+Dec/D_4_G      |         |    1.429|         |         |
+Dec/D_5_G      |         |    1.429|         |         |
+Dec/D_6_G      |         |    1.429|         |         |
+Dec/D_7_G      |         |    1.429|         |         |
+Dec/D_8_G      |         |    1.429|         |         |
+Dec/D_9_G      |         |    1.429|         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 46.00 secs
+Total CPU time to Xst completion: 46.27 secs
+ 
+--> 
+
+Total memory usage is 4636044 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   66 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

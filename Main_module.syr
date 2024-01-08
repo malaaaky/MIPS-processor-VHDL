@@ -1,0 +1,823 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> Reading design: Main_module.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Main_module.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Main_module"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : Main_module
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\regfilePackage.vhd" into library work
+Parsing package <regfilePackage>.
+Parsing package body <regfilePackage>.
+Parsing VHDL file "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\MUX.vhd" into library work
+Parsing entity <MUX>.
+Parsing architecture <Behavioral> of entity <mux>.
+Parsing VHDL file "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\FLOPR.vhd" into library work
+Parsing entity <FLOPR>.
+Parsing architecture <Behavioral> of entity <flopr>.
+Parsing VHDL file "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\Decoder5to32.vhd" into library work
+Parsing entity <Decoder5to32>.
+Parsing architecture <Behavioral> of entity <decoder5to32>.
+Parsing VHDL file "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\sl2.vhd" into library work
+Parsing entity <sl2>.
+Parsing architecture <Behavioral> of entity <sl2>.
+Parsing VHDL file "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\signext.vhd" into library work
+Parsing entity <signext>.
+Parsing architecture <Behavioral> of entity <signext>.
+Parsing VHDL file "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\RegisterFile.vhd" into library work
+Parsing entity <RegisterFile>.
+Parsing architecture <Behavioral> of entity <registerfile>.
+Parsing VHDL file "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\MUX2x1.vhd" into library work
+Parsing entity <MUX2x1>.
+Parsing architecture <Behavioral> of entity <mux2x1>.
+Parsing VHDL file "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\MainDecoder.vhd" into library work
+Parsing entity <MainDecoder>.
+Parsing architecture <Behavioral> of entity <maindecoder>.
+Parsing VHDL file "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\jsl2.vhd" into library work
+Parsing entity <jsl2>.
+Parsing architecture <Behavioral> of entity <jsl2>.
+Parsing VHDL file "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\InstMUX.vhd" into library work
+Parsing entity <InstMUX>.
+Parsing architecture <Behavioral> of entity <instmux>.
+Parsing VHDL file "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\datapathPackage.vhd" into library work
+Parsing package <datapathPackage>.
+Parsing package body <datapathPackage>.
+Parsing VHDL file "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\ControllerPackage.vhd" into library work
+Parsing package <ControllerPackage>.
+Parsing VHDL file "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\ALUDecoder.vhd" into library work
+Parsing entity <ALUDecoder>.
+Parsing architecture <Behavioral> of entity <aludecoder>.
+Parsing VHDL file "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\ALU.vhd" into library work
+Parsing entity <ALU>.
+Parsing architecture <Behavioral> of entity <alu>.
+Parsing VHDL file "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\Adder.vhd" into library work
+Parsing entity <Adder>.
+Parsing architecture <Behavioral> of entity <adder>.
+Parsing VHDL file "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\MIPSPackage.vhd" into library work
+Parsing package <MIPSPackage>.
+Parsing VHDL file "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\datapath.vhd" into library work
+Parsing entity <datapath>.
+Parsing architecture <Behavioral> of entity <datapath>.
+Parsing VHDL file "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\Controller.vhd" into library work
+Parsing entity <Controller>.
+Parsing architecture <Behavioral> of entity <controller>.
+Parsing VHDL file "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\MIPS.vhd" into library work
+Parsing entity <MIPS>.
+Parsing architecture <Behavioral> of entity <mips>.
+Parsing VHDL file "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\MainPackage.vhd" into library work
+Parsing package <MainPackage>.
+Parsing VHDL file "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\imem.vhd" into library work
+Parsing entity <imem>.
+Parsing architecture <behave> of entity <imem>.
+Parsing VHDL file "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\dmem.vhd" into library work
+Parsing entity <dmem>.
+Parsing architecture <behave> of entity <dmem>.
+Parsing VHDL file "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\Main_module.vhd" into library work
+Parsing entity <Main_module>.
+Parsing architecture <Behavioral> of entity <main_module>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Main_module> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <MIPS> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <datapath> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <RegisterFile> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <MUX> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <FLOPR> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Decoder5to32> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ALU> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <InstMUX> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <MUX2x1> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <signext> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Adder> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <sl2> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <jsl2> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Controller> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <MainDecoder> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ALUDecoder> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <imem> (architecture <behave>) from library <work>.
+
+Elaborating entity <dmem> (architecture <behave>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Main_module>.
+    Related source file is "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\Main_module.vhd".
+    Summary:
+	no macro.
+Unit <Main_module> synthesized.
+
+Synthesizing Unit <MIPS>.
+    Related source file is "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\MIPS.vhd".
+    Summary:
+	no macro.
+Unit <MIPS> synthesized.
+
+Synthesizing Unit <datapath>.
+    Related source file is "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\datapath.vhd".
+WARNING:Xst:647 - Input <instr<31:26>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <datapath> synthesized.
+
+Synthesizing Unit <RegisterFile>.
+    Related source file is "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\RegisterFile.vhd".
+    Summary:
+	no macro.
+Unit <RegisterFile> synthesized.
+
+Synthesizing Unit <MUX>.
+    Related source file is "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\MUX.vhd".
+    Found 32-bit 32-to-1 multiplexer for signal <Y> created at line 39.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX> synthesized.
+
+Synthesizing Unit <FLOPR>.
+    Related source file is "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\FLOPR.vhd".
+    Found 32-bit register for signal <temp>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <FLOPR> synthesized.
+
+Synthesizing Unit <Decoder5to32>.
+    Related source file is "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\Decoder5to32.vhd".
+    Found 32x32-bit Read Only RAM for signal <D>
+    Summary:
+	inferred   1 RAM(s).
+Unit <Decoder5to32> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\ALU.vhd".
+    Found 32-bit adder for signal <_n0205> created at line 14.
+    Found 32-bit adder for signal <_n0206> created at line 14.
+    Found 32-bit adder for signal <S> created at line 14.
+    Found 1-bit 4-to-1 multiplexer for signal <Z_16_o_A[31]_MUX_36_o> created at line 19.
+    Found 1-bit 4-to-1 multiplexer for signal <Z_16_o_A[31]_MUX_40_o> created at line 19.
+    Found 1-bit 4-to-1 multiplexer for signal <Z_16_o_A[31]_MUX_44_o> created at line 19.
+    Found 1-bit 4-to-1 multiplexer for signal <Z_16_o_A[31]_MUX_48_o> created at line 19.
+    Found 1-bit 4-to-1 multiplexer for signal <Z_16_o_A[31]_MUX_52_o> created at line 19.
+    Found 1-bit 4-to-1 multiplexer for signal <Z_16_o_A[31]_MUX_56_o> created at line 19.
+    Found 1-bit 4-to-1 multiplexer for signal <Z_16_o_A[31]_MUX_60_o> created at line 19.
+    Found 1-bit 4-to-1 multiplexer for signal <Z_16_o_A[31]_MUX_64_o> created at line 19.
+    Found 1-bit 4-to-1 multiplexer for signal <Z_16_o_A[31]_MUX_68_o> created at line 19.
+    Found 1-bit 4-to-1 multiplexer for signal <Z_16_o_A[31]_MUX_72_o> created at line 19.
+    Found 1-bit 4-to-1 multiplexer for signal <Z_16_o_A[31]_MUX_76_o> created at line 19.
+    Found 1-bit 4-to-1 multiplexer for signal <Z_16_o_A[31]_MUX_80_o> created at line 19.
+    Found 1-bit 4-to-1 multiplexer for signal <Z_16_o_A[31]_MUX_84_o> created at line 19.
+    Found 1-bit 4-to-1 multiplexer for signal <Z_16_o_A[31]_MUX_88_o> created at line 19.
+    Found 1-bit 4-to-1 multiplexer for signal <Z_16_o_A[31]_MUX_92_o> created at line 19.
+    Found 1-bit 4-to-1 multiplexer for signal <Z_16_o_A[31]_MUX_96_o> created at line 19.
+    Found 1-bit 4-to-1 multiplexer for signal <Z_16_o_A[31]_MUX_100_o> created at line 19.
+    Found 1-bit 4-to-1 multiplexer for signal <Z_16_o_A[31]_MUX_104_o> created at line 19.
+    Found 1-bit 4-to-1 multiplexer for signal <Z_16_o_A[31]_MUX_108_o> created at line 19.
+    Found 1-bit 4-to-1 multiplexer for signal <Z_16_o_A[31]_MUX_112_o> created at line 19.
+    Found 1-bit 4-to-1 multiplexer for signal <Z_16_o_A[31]_MUX_116_o> created at line 19.
+    Found 1-bit 4-to-1 multiplexer for signal <Z_16_o_A[31]_MUX_120_o> created at line 19.
+    Found 1-bit 4-to-1 multiplexer for signal <Z_16_o_A[31]_MUX_124_o> created at line 19.
+    Found 1-bit 4-to-1 multiplexer for signal <Z_16_o_A[31]_MUX_128_o> created at line 19.
+    Found 1-bit 4-to-1 multiplexer for signal <Z_16_o_A[31]_MUX_132_o> created at line 19.
+    Found 1-bit 4-to-1 multiplexer for signal <Z_16_o_A[31]_MUX_136_o> created at line 19.
+    Found 1-bit 4-to-1 multiplexer for signal <Z_16_o_A[31]_MUX_140_o> created at line 19.
+    Found 1-bit 4-to-1 multiplexer for signal <Z_16_o_A[31]_MUX_144_o> created at line 19.
+    Found 1-bit 4-to-1 multiplexer for signal <Z_16_o_A[31]_MUX_148_o> created at line 19.
+    Found 1-bit 4-to-1 multiplexer for signal <Z_16_o_A[31]_MUX_152_o> created at line 19.
+    Found 1-bit 4-to-1 multiplexer for signal <Z_16_o_A[31]_MUX_156_o> created at line 19.
+    Found 1-bit 4-to-1 multiplexer for signal <Z_16_o_A[31]_MUX_160_o> created at line 19.
+    Found 1-bit tristate buffer for signal <databuffer<31>> created at line 19
+    Found 1-bit tristate buffer for signal <databuffer<30>> created at line 19
+    Found 1-bit tristate buffer for signal <databuffer<29>> created at line 19
+    Found 1-bit tristate buffer for signal <databuffer<28>> created at line 19
+    Found 1-bit tristate buffer for signal <databuffer<27>> created at line 19
+    Found 1-bit tristate buffer for signal <databuffer<26>> created at line 19
+    Found 1-bit tristate buffer for signal <databuffer<25>> created at line 19
+    Found 1-bit tristate buffer for signal <databuffer<24>> created at line 19
+    Found 1-bit tristate buffer for signal <databuffer<23>> created at line 19
+    Found 1-bit tristate buffer for signal <databuffer<22>> created at line 19
+    Found 1-bit tristate buffer for signal <databuffer<21>> created at line 19
+    Found 1-bit tristate buffer for signal <databuffer<20>> created at line 19
+    Found 1-bit tristate buffer for signal <databuffer<19>> created at line 19
+    Found 1-bit tristate buffer for signal <databuffer<18>> created at line 19
+    Found 1-bit tristate buffer for signal <databuffer<17>> created at line 19
+    Found 1-bit tristate buffer for signal <databuffer<16>> created at line 19
+    Found 1-bit tristate buffer for signal <databuffer<15>> created at line 19
+    Found 1-bit tristate buffer for signal <databuffer<14>> created at line 19
+    Found 1-bit tristate buffer for signal <databuffer<13>> created at line 19
+    Found 1-bit tristate buffer for signal <databuffer<12>> created at line 19
+    Found 1-bit tristate buffer for signal <databuffer<11>> created at line 19
+    Found 1-bit tristate buffer for signal <databuffer<10>> created at line 19
+    Found 1-bit tristate buffer for signal <databuffer<9>> created at line 19
+    Found 1-bit tristate buffer for signal <databuffer<8>> created at line 19
+    Found 1-bit tristate buffer for signal <databuffer<7>> created at line 19
+    Found 1-bit tristate buffer for signal <databuffer<6>> created at line 19
+    Found 1-bit tristate buffer for signal <databuffer<5>> created at line 19
+    Found 1-bit tristate buffer for signal <databuffer<4>> created at line 19
+    Found 1-bit tristate buffer for signal <databuffer<3>> created at line 19
+    Found 1-bit tristate buffer for signal <databuffer<2>> created at line 19
+    Found 1-bit tristate buffer for signal <databuffer<1>> created at line 19
+    Found 1-bit tristate buffer for signal <databuffer<0>> created at line 19
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  34 Multiplexer(s).
+	inferred  32 Tristate(s).
+Unit <ALU> synthesized.
+
+Synthesizing Unit <InstMUX>.
+    Related source file is "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\InstMUX.vhd".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <InstMUX> synthesized.
+
+Synthesizing Unit <MUX2x1>.
+    Related source file is "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\MUX2x1.vhd".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX2x1> synthesized.
+
+Synthesizing Unit <signext>.
+    Related source file is "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\signext.vhd".
+    Summary:
+	no macro.
+Unit <signext> synthesized.
+
+Synthesizing Unit <Adder>.
+    Related source file is "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\Adder.vhd".
+    Found 32-bit adder for signal <c> created at line 15.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Adder> synthesized.
+
+Synthesizing Unit <sl2>.
+    Related source file is "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\sl2.vhd".
+WARNING:Xst:647 - Input <x<31:30>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <sl2> synthesized.
+
+Synthesizing Unit <jsl2>.
+    Related source file is "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\jsl2.vhd".
+    Summary:
+	no macro.
+Unit <jsl2> synthesized.
+
+Synthesizing Unit <Controller>.
+    Related source file is "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\Controller.vhd".
+    Summary:
+	no macro.
+Unit <Controller> synthesized.
+
+Synthesizing Unit <MainDecoder>.
+    Related source file is "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\MainDecoder.vhd".
+    Summary:
+	no macro.
+Unit <MainDecoder> synthesized.
+
+Synthesizing Unit <ALUDecoder>.
+    Related source file is "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\ALUDecoder.vhd".
+    Summary:
+	no macro.
+Unit <ALUDecoder> synthesized.
+
+Synthesizing Unit <imem>.
+    Related source file is "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\imem.vhd".
+    Found 64x32-bit Read Only RAM for signal <rd>
+    Summary:
+	inferred   1 RAM(s).
+Unit <imem> synthesized.
+
+Synthesizing Unit <dmem>.
+    Related source file is "D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\dmem.vhd".
+WARNING:Xst:647 - Input <a<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <a<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 64x32-bit single-port RAM <Mram_mem> for signal <mem>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Multiplexer(s).
+Unit <dmem> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 32x32-bit single-port Read Only RAM                   : 1
+ 64x32-bit single-port RAM                             : 1
+ 64x32-bit single-port Read Only RAM                   : 1
+# Adders/Subtractors                                   : 5
+ 32-bit adder                                          : 5
+# Registers                                            : 33
+ 32-bit register                                       : 33
+# Multiplexers                                         : 42
+ 1-bit 4-to-1 multiplexer                              : 32
+ 32-bit 2-to-1 multiplexer                             : 7
+ 32-bit 32-to-1 multiplexer                            : 2
+ 5-bit 2-to-1 multiplexer                              : 1
+# Tristates                                            : 32
+ 1-bit tristate buffer                                 : 32
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Decoder5to32>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_D> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <A>             |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <D>             |          |
+    -----------------------------------------------------------------------
+Unit <Decoder5to32> synthesized (advanced).
+
+Synthesizing (advanced) Unit <dmem>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_mem> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <we>            | high     |
+    |     addrA          | connected to signal <a>             |          |
+    |     diA            | connected to signal <wd>            |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <dmem> synthesized (advanced).
+
+Synthesizing (advanced) Unit <imem>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_rd> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 32-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <a>             |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <rd>            |          |
+    -----------------------------------------------------------------------
+Unit <imem> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 32x32-bit single-port distributed Read Only RAM       : 1
+ 64x32-bit single-port distributed RAM                 : 1
+ 64x32-bit single-port distributed Read Only RAM       : 1
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 3
+ 32-bit adder carry in                                 : 1
+# Registers                                            : 1056
+ Flip-Flops                                            : 1056
+# Multiplexers                                         : 42
+ 1-bit 4-to-1 multiplexer                              : 32
+ 32-bit 2-to-1 multiplexer                             : 7
+ 32-bit 32-to-1 multiplexer                            : 2
+ 5-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2042 - Unit Main_module: 32 internal tristates are replaced by logic (pull-up yes): N10, N11, N12, N13, N14, N15, N16, N17, N18, N19, N2, N20, N21, N22, N23, N24, N25, N26, N27, N28, N29, N3, N30, N31, N32, N33, N4, N5, N6, N7, N8, N9.
+
+Optimizing unit <FLOPR> ...
+
+Optimizing unit <Main_module> ...
+
+Optimizing unit <RegisterFile> ...
+WARNING:Xst:2677 - Node <path/path/pcreg/temp_31> of sequential type is unconnected in block <Main_module>.
+WARNING:Xst:2677 - Node <path/path/pcreg/temp_30> of sequential type is unconnected in block <Main_module>.
+WARNING:Xst:2677 - Node <path/path/pcreg/temp_29> of sequential type is unconnected in block <Main_module>.
+WARNING:Xst:2677 - Node <path/path/pcreg/temp_28> of sequential type is unconnected in block <Main_module>.
+WARNING:Xst:2677 - Node <path/path/pcreg/temp_27> of sequential type is unconnected in block <Main_module>.
+WARNING:Xst:2677 - Node <path/path/pcreg/temp_26> of sequential type is unconnected in block <Main_module>.
+WARNING:Xst:2677 - Node <path/path/pcreg/temp_25> of sequential type is unconnected in block <Main_module>.
+WARNING:Xst:2677 - Node <path/path/pcreg/temp_24> of sequential type is unconnected in block <Main_module>.
+WARNING:Xst:2677 - Node <path/path/pcreg/temp_23> of sequential type is unconnected in block <Main_module>.
+WARNING:Xst:2677 - Node <path/path/pcreg/temp_22> of sequential type is unconnected in block <Main_module>.
+WARNING:Xst:2677 - Node <path/path/pcreg/temp_21> of sequential type is unconnected in block <Main_module>.
+WARNING:Xst:2677 - Node <path/path/pcreg/temp_20> of sequential type is unconnected in block <Main_module>.
+WARNING:Xst:2677 - Node <path/path/pcreg/temp_19> of sequential type is unconnected in block <Main_module>.
+WARNING:Xst:2677 - Node <path/path/pcreg/temp_18> of sequential type is unconnected in block <Main_module>.
+WARNING:Xst:2677 - Node <path/path/pcreg/temp_17> of sequential type is unconnected in block <Main_module>.
+WARNING:Xst:2677 - Node <path/path/pcreg/temp_16> of sequential type is unconnected in block <Main_module>.
+WARNING:Xst:2677 - Node <path/path/pcreg/temp_15> of sequential type is unconnected in block <Main_module>.
+WARNING:Xst:2677 - Node <path/path/pcreg/temp_14> of sequential type is unconnected in block <Main_module>.
+WARNING:Xst:2677 - Node <path/path/pcreg/temp_13> of sequential type is unconnected in block <Main_module>.
+WARNING:Xst:2677 - Node <path/path/pcreg/temp_12> of sequential type is unconnected in block <Main_module>.
+WARNING:Xst:2677 - Node <path/path/pcreg/temp_11> of sequential type is unconnected in block <Main_module>.
+WARNING:Xst:2677 - Node <path/path/pcreg/temp_10> of sequential type is unconnected in block <Main_module>.
+WARNING:Xst:2677 - Node <path/path/pcreg/temp_9> of sequential type is unconnected in block <Main_module>.
+WARNING:Xst:2677 - Node <path/path/pcreg/temp_8> of sequential type is unconnected in block <Main_module>.
+WARNING:Xst:2677 - Node <path/path/pcreg/temp_1> of sequential type is unconnected in block <Main_module>.
+WARNING:Xst:2677 - Node <path/path/pcreg/temp_0> of sequential type is unconnected in block <Main_module>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Main_module, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1030
+ Flip-Flops                                            : 1030
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Main_module.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1061
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 4
+#      LUT2                        : 37
+#      LUT3                        : 37
+#      LUT4                        : 60
+#      LUT5                        : 45
+#      LUT6                        : 726
+#      MUXCY                       : 41
+#      MUXF7                       : 64
+#      VCC                         : 1
+#      XORCY                       : 44
+# FlipFlops/Latches                : 1030
+#      FDC                         : 6
+#      FDCE                        : 1024
+# RAMS                             : 32
+#      RAM64X1S                    : 32
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 66
+#      IBUF                        : 1
+#      OBUF                        : 65
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1030  out of  126800     0%  
+ Number of Slice LUTs:                  942  out of  63400     1%  
+    Number used as Logic:               910  out of  63400     1%  
+    Number used as Memory:               32  out of  19000     0%  
+       Number used as RAM:               32
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1918
+   Number with an unused Flip Flop:     888  out of   1918    46%  
+   Number with an unused LUT:           976  out of   1918    50%  
+   Number of fully used LUT-FF pairs:    54  out of   1918     2%  
+   Number of unique control sets:        33
+
+IO Utilization: 
+ Number of IOs:                          67
+ Number of bonded IOBs:                  67  out of    210    31%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRL/BUFHCEs:         1  out of    128     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 1062  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 6.898ns (Maximum Frequency: 144.971MHz)
+   Minimum input arrival time before clock: 0.824ns
+   Maximum output required time after clock: 6.066ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.898ns (frequency: 144.971MHz)
+  Total number of paths / destination ports: 59255919 / 2310
+-------------------------------------------------------------------------
+Delay:               6.898ns (Levels of Logic = 28)
+  Source:            path/path/pcreg/temp_7 (FF)
+  Destination:       path/path/pcreg/temp_7 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: path/path/pcreg/temp_7 to path/path/pcreg/temp_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             20   0.361   0.781  path/path/pcreg/temp_7 (path/path/pcreg/temp_7)
+     LUT6:I0->O          257   0.097   0.521  instruction/Mram_rd171 (instr<17>)
+     LUT6:I4->O            1   0.097   0.556  path/path/Reg/MUX2/Mmux_Y_834 (path/path/Reg/MUX2/Mmux_Y_834)
+     LUT6:I2->O            1   0.097   0.000  path/path/Reg/MUX2/Mmux_Y_311 (path/path/Reg/MUX2/Mmux_Y_311)
+     MUXF7:I1->O           3   0.279   0.305  path/path/Reg/MUX2/Mmux_Y_2_f7_10 (writedata_1_OBUF)
+     LUT4:I3->O            3   0.097   0.305  path/path/operation/Mmux_B121 (path/path/operation/B<1>)
+     LUT2:I1->O            1   0.097   0.295  path/path/operation/Madd_S1 (path/path/operation/Madd_S1)
+     LUT3:I2->O            1   0.097   0.000  path/path/operation/Madd_S_lut<0>2 (path/path/operation/Madd_S_lut<0>2)
+     MUXCY:S->O            1   0.353   0.000  path/path/operation/Madd_S_cy<0>_1 (path/path/operation/Madd_S_cy<0>2)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_2 (path/path/operation/Madd_S_cy<0>3)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_3 (path/path/operation/Madd_S_cy<0>4)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_4 (path/path/operation/Madd_S_cy<0>5)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_5 (path/path/operation/Madd_S_cy<0>6)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_6 (path/path/operation/Madd_S_cy<0>7)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_7 (path/path/operation/Madd_S_cy<0>8)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_8 (path/path/operation/Madd_S_cy<0>9)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_9 (path/path/operation/Madd_S_cy<0>10)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_10 (path/path/operation/Madd_S_cy<0>11)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_11 (path/path/operation/Madd_S_cy<0>12)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_12 (path/path/operation/Madd_S_cy<0>13)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_13 (path/path/operation/Madd_S_cy<0>14)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_14 (path/path/operation/Madd_S_cy<0>15)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_15 (path/path/operation/Madd_S_cy<0>16)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_16 (path/path/operation/Madd_S_cy<0>17)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_17 (path/path/operation/Madd_S_cy<0>18)
+     XORCY:CI->O           1   0.370   0.295  path/path/operation/Madd_S_xor<0>_18 (path/path/operation/S<19>)
+     LUT5:I4->O            3   0.097   0.521  path/path/operation/Mmux_Z_16_o_A[31]_MUX_84_o11 (dataadr_19_OBUF)
+     LUT6:I3->O            6   0.097   0.706  path/control/pcsr6 (path/control/pcsr5)
+     LUT6:I1->O            1   0.097   0.000  path/path/MuxJ/Mmux_y231 (path/path/pcfinal<2>)
+     FDC:D                     0.008          path/path/pcreg/temp_2
+    ----------------------------------------
+    Total                      6.898ns (2.612ns logic, 4.286ns route)
+                                       (37.9% logic, 62.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 1030 / 1030
+-------------------------------------------------------------------------
+Offset:              0.824ns (Levels of Logic = 1)
+  Source:            reset (PAD)
+  Destination:       path/path/Reg/Reg31/temp_31 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to path/path/Reg/Reg31/temp_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1030   0.001   0.474  reset_IBUF (reset_IBUF)
+     FDCE:CLR                  0.349          path/path/Reg/Reg31/temp_0
+    ----------------------------------------
+    Total                      0.824ns (0.350ns logic, 0.474ns route)
+                                       (42.5% logic, 57.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 615790 / 65
+-------------------------------------------------------------------------
+Offset:              6.066ns (Levels of Logic = 39)
+  Source:            path/path/pcreg/temp_7 (FF)
+  Destination:       dataadr<0> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: path/path/pcreg/temp_7 to dataadr<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             20   0.361   0.781  path/path/pcreg/temp_7 (path/path/pcreg/temp_7)
+     LUT6:I0->O          257   0.097   0.521  instruction/Mram_rd171 (instr<17>)
+     LUT6:I4->O            1   0.097   0.556  path/path/Reg/MUX2/Mmux_Y_834 (path/path/Reg/MUX2/Mmux_Y_834)
+     LUT6:I2->O            1   0.097   0.000  path/path/Reg/MUX2/Mmux_Y_311 (path/path/Reg/MUX2/Mmux_Y_311)
+     MUXF7:I1->O           3   0.279   0.305  path/path/Reg/MUX2/Mmux_Y_2_f7_10 (writedata_1_OBUF)
+     LUT4:I3->O            3   0.097   0.305  path/path/operation/Mmux_B121 (path/path/operation/B<1>)
+     LUT2:I1->O            1   0.097   0.295  path/path/operation/Madd_S1 (path/path/operation/Madd_S1)
+     LUT3:I2->O            1   0.097   0.000  path/path/operation/Madd_S_lut<0>2 (path/path/operation/Madd_S_lut<0>2)
+     MUXCY:S->O            1   0.353   0.000  path/path/operation/Madd_S_cy<0>_1 (path/path/operation/Madd_S_cy<0>2)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_2 (path/path/operation/Madd_S_cy<0>3)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_3 (path/path/operation/Madd_S_cy<0>4)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_4 (path/path/operation/Madd_S_cy<0>5)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_5 (path/path/operation/Madd_S_cy<0>6)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_6 (path/path/operation/Madd_S_cy<0>7)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_7 (path/path/operation/Madd_S_cy<0>8)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_8 (path/path/operation/Madd_S_cy<0>9)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_9 (path/path/operation/Madd_S_cy<0>10)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_10 (path/path/operation/Madd_S_cy<0>11)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_11 (path/path/operation/Madd_S_cy<0>12)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_12 (path/path/operation/Madd_S_cy<0>13)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_13 (path/path/operation/Madd_S_cy<0>14)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_14 (path/path/operation/Madd_S_cy<0>15)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_15 (path/path/operation/Madd_S_cy<0>16)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_16 (path/path/operation/Madd_S_cy<0>17)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_17 (path/path/operation/Madd_S_cy<0>18)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_18 (path/path/operation/Madd_S_cy<0>19)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_19 (path/path/operation/Madd_S_cy<0>20)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_20 (path/path/operation/Madd_S_cy<0>21)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_21 (path/path/operation/Madd_S_cy<0>22)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_22 (path/path/operation/Madd_S_cy<0>23)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_23 (path/path/operation/Madd_S_cy<0>24)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_24 (path/path/operation/Madd_S_cy<0>25)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_25 (path/path/operation/Madd_S_cy<0>26)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_26 (path/path/operation/Madd_S_cy<0>27)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_27 (path/path/operation/Madd_S_cy<0>28)
+     MUXCY:CI->O           1   0.023   0.000  path/path/operation/Madd_S_cy<0>_28 (path/path/operation/Madd_S_cy<0>29)
+     MUXCY:CI->O           0   0.023   0.000  path/path/operation/Madd_S_cy<0>_29 (path/path/operation/Madd_S_cy<0>30)
+     XORCY:CI->O           3   0.370   0.305  path/path/operation/Madd_S_xor<0>_30 (path/path/operation/S<31>)
+     LUT6:I5->O            8   0.097   0.311  path/path/operation/Mmux_Z_16_o_A[31]_MUX_160_o11 (dataadr_0_OBUF)
+     OBUF:I->O                 0.000          dataadr_0_OBUF (dataadr<0>)
+    ----------------------------------------
+    Total                      6.066ns (2.686ns logic, 3.380ns route)
+                                       (44.3% logic, 55.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    6.898|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 55.00 secs
+Total CPU time to Xst completion: 54.47 secs
+ 
+--> 
+
+Total memory usage is 4844940 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   31 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

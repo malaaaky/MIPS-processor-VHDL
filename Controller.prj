@@ -1,0 +1,4 @@
+vhdl work "MainDecoder.vhd"
+vhdl work "ControllerPackage.vhd"
+vhdl work "ALUDecoder.vhd"
+vhdl work "Controller.vhd"

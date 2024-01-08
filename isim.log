@@ -1,0 +1,26 @@
+ISim log file
+Running: D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\testbench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/college/8) Sixth Semester/Computer Org. & Arch/1/Group14/Group14/Group14_21P0277/testbench_isim_beh.wdb 
+ISim P.58f (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 10 us
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /testbench/dut/path/path/operation/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /testbench/dut/path/path/operation/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /testbench/dut/path/path/operation/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /testbench/dut/instruction/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /testbench/dut/Rdata/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Finished circuit initialization process.
+at 0 ps, Instance /testbench/dut/Rdata/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /testbench/dut/path/path/operation/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /testbench/dut/path/path/operation/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /testbench/dut/Rdata/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /testbench/dut/path/path/operation/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /testbench/dut/path/path/operation/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /testbench/dut/Rdata/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+ERROR: at 5020 ns(4): The file 'D:\college\8) Sixth Semester\Computer Org. & Arch\1\Group14\Group14\Group14_21P0277\memfile.dat' of text is already open in File "D:/college/8) Sixth Semester/Computer Org. & Arch/1/Group14/Group14/Group14_21P0277/imem.vhd" Line 30 
+ERROR: In process imem.vhd:17 
+ 
+INFO: Simulator is stopped.

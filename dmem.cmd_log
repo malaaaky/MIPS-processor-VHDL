@@ -1,0 +1,7 @@
+xst -intstyle ise -filter "E:/Group14_21P0277/iseconfig/filter.filter" -ifn "E:/Group14_21P0277/dmem.xst" -ofn "E:/Group14_21P0277/dmem.syr" 
+xst -intstyle ise -filter "E:/Group14_21P0277/iseconfig/filter.filter" -ifn "E:/Group14_21P0277/dmem.xst" -ofn "E:/Group14_21P0277/dmem.syr" 
+xst -intstyle ise -filter "E:/Group14_21P0277/iseconfig/filter.filter" -ifn "E:/Group14_21P0277/dmem.xst" -ofn "E:/Group14_21P0277/dmem.syr" 
+xst -intstyle ise -filter "E:/Group14_21P0277/iseconfig/filter.filter" -ifn "E:/Group14_21P0277/dmem.xst" -ofn "E:/Group14_21P0277/dmem.syr" 
+xst -intstyle ise -filter "E:/Group14_21P0277/iseconfig/filter.filter" -ifn "E:/Group14_21P0277/dmem.xst" -ofn "E:/Group14_21P0277/dmem.syr" 
+vhdtdtfi -lib work dmem.vhd -prj Group14_21P0277 -o dmem.spl -module dmem -template C:/Xilinx/14.5/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 dmem.spl {D:/college/8) Sixth Semester/Computer Org. & Arch/1/Group14/Group14/Group14_21P0277/dmem.sym} 

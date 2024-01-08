@@ -1,0 +1,2 @@
+xst -intstyle ise -filter "E:/Group14_21P0277/iseconfig/filter.filter" -ifn "E:/Group14_21P0277/signext.xst" -ofn "E:/Group14_21P0277/signext.syr" 
+xst -intstyle ise -filter "E:/Group14_21P0277/iseconfig/filter.filter" -ifn "E:/Group14_21P0277/signext.xst" -ofn "E:/Group14_21P0277/signext.syr" 

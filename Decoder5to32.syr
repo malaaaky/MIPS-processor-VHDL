@@ -1,0 +1,1681 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: Decoder5to32.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Decoder5to32.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Decoder5to32"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : Decoder5to32
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "E:\Group14_21P0277\Decoder5to32.vhd" into library work
+Parsing entity <Decoder5to32>.
+Parsing architecture <Behavioral> of entity <decoder5to32>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Decoder5to32> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Decoder5to32>.
+    Related source file is "E:\Group14_21P0277\Decoder5to32.vhd".
+WARNING:Xst:737 - Found 1-bit latch for signal <D<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <D<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred  32 Latch(s).
+	inferred  42 Multiplexer(s).
+Unit <Decoder5to32> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Latches                                              : 32
+ 1-bit latch                                           : 32
+# Multiplexers                                         : 42
+ 1-bit 2-to-1 multiplexer                              : 42
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multiplexers                                         : 42
+ 1-bit 2-to-1 multiplexer                              : 42
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:3001 - This design contains one or more registers or latches with an active
+   asynchronous set and asynchronous reset. While this circuit can be built,
+   it creates a sub-optimal implementation in terms of area, power and
+   performance. For a more optimal implementation Xilinx highly recommends
+   one of the following:
+
+          1) Remove either the set or reset from all registers and latches if
+             not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Artix7 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    D_31 in unit <Decoder5to32>
+    D_0 in unit <Decoder5to32>
+    D_1 in unit <Decoder5to32>
+    D_17 in unit <Decoder5to32>
+    D_18 in unit <Decoder5to32>
+    D_19 in unit <Decoder5to32>
+    D_21 in unit <Decoder5to32>
+    D_22 in unit <Decoder5to32>
+    D_20 in unit <Decoder5to32>
+    D_23 in unit <Decoder5to32>
+    D_24 in unit <Decoder5to32>
+    D_25 in unit <Decoder5to32>
+    D_26 in unit <Decoder5to32>
+    D_27 in unit <Decoder5to32>
+    D_28 in unit <Decoder5to32>
+    D_30 in unit <Decoder5to32>
+    D_2 in unit <Decoder5to32>
+    D_29 in unit <Decoder5to32>
+    D_3 in unit <Decoder5to32>
+    D_4 in unit <Decoder5to32>
+    D_5 in unit <Decoder5to32>
+    D_6 in unit <Decoder5to32>
+    D_7 in unit <Decoder5to32>
+    D_8 in unit <Decoder5to32>
+    D_10 in unit <Decoder5to32>
+    D_11 in unit <Decoder5to32>
+    D_9 in unit <Decoder5to32>
+    D_12 in unit <Decoder5to32>
+    D_13 in unit <Decoder5to32>
+    D_15 in unit <Decoder5to32>
+    D_16 in unit <Decoder5to32>
+    D_14 in unit <Decoder5to32>
+
+
+Optimizing unit <Decoder5to32> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Decoder5to32, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Decoder5to32.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 129
+#      GND                         : 1
+#      LUT3                        : 64
+#      LUT5                        : 64
+# FlipFlops/Latches                : 32
+#      LD                          : 32
+# IO Buffers                       : 37
+#      IBUF                        : 5
+#      OBUF                        : 32
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                  128  out of  63400     0%  
+    Number used as Logic:               128  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    128
+   Number with an unused Flip Flop:     128  out of    128   100%  
+   Number with an unused LUT:             0  out of    128     0%  
+   Number of fully used LUT-FF pairs:     0  out of    128     0%  
+   Number of unique control sets:        32
+
+IO Utilization: 
+ Number of IOs:                          37
+ Number of bonded IOBs:                  37  out of    210    17%  
+    IOB Flip Flops/Latches:              32
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+D_14_G(D_14_G:O)                   | NONE(*)(D_14)          | 1     |
+D_16_G(D_16_G:O)                   | NONE(*)(D_16)          | 1     |
+D_15_G(D_15_G:O)                   | NONE(*)(D_15)          | 1     |
+D_13_G(D_13_G:O)                   | NONE(*)(D_13)          | 1     |
+D_12_G(D_12_G:O)                   | NONE(*)(D_12)          | 1     |
+D_9_G(D_9_G:O)                     | NONE(*)(D_9)           | 1     |
+D_11_G(D_11_G:O)                   | NONE(*)(D_11)          | 1     |
+D_10_G(D_10_G:O)                   | NONE(*)(D_10)          | 1     |
+D_8_G(D_8_G:O)                     | NONE(*)(D_8)           | 1     |
+D_7_G(D_7_G:O)                     | NONE(*)(D_7)           | 1     |
+D_6_G(D_6_G:O)                     | NONE(*)(D_6)           | 1     |
+D_5_G(D_5_G:O)                     | NONE(*)(D_5)           | 1     |
+D_4_G(D_4_G:O)                     | NONE(*)(D_4)           | 1     |
+D_3_G(D_3_G:O)                     | NONE(*)(D_3)           | 1     |
+D_29_G(D_29_G:O)                   | NONE(*)(D_29)          | 1     |
+D_2_G(D_2_G:O)                     | NONE(*)(D_2)           | 1     |
+D_30_G(D_30_G:O)                   | NONE(*)(D_30)          | 1     |
+D_28_G(D_28_G:O)                   | NONE(*)(D_28)          | 1     |
+D_27_G(D_27_G:O)                   | NONE(*)(D_27)          | 1     |
+D_26_G(D_26_G:O)                   | NONE(*)(D_26)          | 1     |
+D_25_G(D_25_G:O)                   | NONE(*)(D_25)          | 1     |
+D_24_G(D_24_G:O)                   | NONE(*)(D_24)          | 1     |
+D_23_G(D_23_G:O)                   | NONE(*)(D_23)          | 1     |
+D_20_G(D_20_G:O)                   | NONE(*)(D_20)          | 1     |
+D_22_G(D_22_G:O)                   | NONE(*)(D_22)          | 1     |
+D_21_G(D_21_G:O)                   | NONE(*)(D_21)          | 1     |
+D_19_G(D_19_G:O)                   | NONE(*)(D_19)          | 1     |
+D_18_G(D_18_G:O)                   | NONE(*)(D_18)          | 1     |
+D_17_G(D_17_G:O)                   | NONE(*)(D_17)          | 1     |
+D_1_G(D_1_G:O)                     | NONE(*)(D_1)           | 1     |
+D_0_G(D_0_G:O)                     | NONE(*)(D_0)           | 1     |
+D_31_G(D_31_G:O)                   | NONE(*)(D_31)          | 1     |
+-----------------------------------+------------------------+-------+
+(*) These 32 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 1.505ns
+   Maximum output required time after clock: 0.751ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'D_14_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            A<4> (PAD)
+  Destination:       D_14 (LATCH)
+  Destination Clock: D_14_G falling
+
+  Data Path: A<4> to D_14
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  A_4_IBUF (A_4_IBUF)
+     LUT5:I0->O            2   0.097   0.515  A[4]_GND_5_o_AND_36_o1 (A[4]_GND_5_o_AND_36_o)
+     LUT3:I0->O            1   0.097   0.000  D_14_D (D_14_D)
+     LD:D                     -0.028          D_14
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'D_16_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            A<2> (PAD)
+  Destination:       D_16 (LATCH)
+  Destination Clock: D_16_G falling
+
+  Data Path: A<2> to D_16
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  A_2_IBUF (A_2_IBUF)
+     LUT5:I0->O            2   0.097   0.515  A[4]_GND_5_o_AND_32_o1 (A[4]_GND_5_o_AND_32_o)
+     LUT3:I0->O            1   0.097   0.000  D_16_D (D_16_D)
+     LD:D                     -0.028          D_16
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'D_15_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            A<4> (PAD)
+  Destination:       D_15 (LATCH)
+  Destination Clock: D_15_G falling
+
+  Data Path: A<4> to D_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  A_4_IBUF (A_4_IBUF)
+     LUT5:I0->O            2   0.097   0.515  A[4]_GND_5_o_AND_34_o1 (A[4]_GND_5_o_AND_34_o)
+     LUT3:I0->O            1   0.097   0.000  D_15_D (D_15_D)
+     LD:D                     -0.028          D_15
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'D_13_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            A<4> (PAD)
+  Destination:       D_13 (LATCH)
+  Destination Clock: D_13_G falling
+
+  Data Path: A<4> to D_13
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  A_4_IBUF (A_4_IBUF)
+     LUT5:I0->O            2   0.097   0.515  A[4]_GND_5_o_AND_38_o1 (A[4]_GND_5_o_AND_38_o)
+     LUT3:I0->O            1   0.097   0.000  D_13_D (D_13_D)
+     LD:D                     -0.028          D_13
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'D_12_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            A<2> (PAD)
+  Destination:       D_12 (LATCH)
+  Destination Clock: D_12_G falling
+
+  Data Path: A<2> to D_12
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  A_2_IBUF (A_2_IBUF)
+     LUT5:I0->O            2   0.097   0.515  A[4]_GND_5_o_AND_40_o1 (A[4]_GND_5_o_AND_40_o)
+     LUT3:I0->O            1   0.097   0.000  D_12_D (D_12_D)
+     LD:D                     -0.028          D_12
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'D_9_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            A<3> (PAD)
+  Destination:       D_9 (LATCH)
+  Destination Clock: D_9_G falling
+
+  Data Path: A<3> to D_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  A_3_IBUF (A_3_IBUF)
+     LUT5:I0->O            2   0.097   0.515  A[4]_GND_5_o_AND_46_o1 (A[4]_GND_5_o_AND_46_o)
+     LUT3:I0->O            1   0.097   0.000  D_9_D (D_9_D)
+     LD:D                     -0.028          D_9
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'D_11_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            A<2> (PAD)
+  Destination:       D_11 (LATCH)
+  Destination Clock: D_11_G falling
+
+  Data Path: A<2> to D_11
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  A_2_IBUF (A_2_IBUF)
+     LUT5:I0->O            2   0.097   0.515  A[4]_GND_5_o_AND_42_o1 (A[4]_GND_5_o_AND_42_o)
+     LUT3:I0->O            1   0.097   0.000  D_11_D (D_11_D)
+     LD:D                     -0.028          D_11
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'D_10_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            A<3> (PAD)
+  Destination:       D_10 (LATCH)
+  Destination Clock: D_10_G falling
+
+  Data Path: A<3> to D_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  A_3_IBUF (A_3_IBUF)
+     LUT5:I0->O            2   0.097   0.515  A[4]_GND_5_o_AND_44_o1 (A[4]_GND_5_o_AND_44_o)
+     LUT3:I0->O            1   0.097   0.000  D_10_D (D_10_D)
+     LD:D                     -0.028          D_10
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'D_8_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            A<2> (PAD)
+  Destination:       D_8 (LATCH)
+  Destination Clock: D_8_G falling
+
+  Data Path: A<2> to D_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  A_2_IBUF (A_2_IBUF)
+     LUT5:I0->O            2   0.097   0.515  A[4]_GND_5_o_AND_48_o1 (A[4]_GND_5_o_AND_48_o)
+     LUT3:I0->O            1   0.097   0.000  D_8_D (D_8_D)
+     LD:D                     -0.028          D_8
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'D_7_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            A<4> (PAD)
+  Destination:       D_7 (LATCH)
+  Destination Clock: D_7_G falling
+
+  Data Path: A<4> to D_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  A_4_IBUF (A_4_IBUF)
+     LUT5:I0->O            2   0.097   0.515  A[4]_GND_5_o_AND_50_o1 (A[4]_GND_5_o_AND_50_o)
+     LUT3:I0->O            1   0.097   0.000  D_7_D (D_7_D)
+     LD:D                     -0.028          D_7
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'D_6_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            A<2> (PAD)
+  Destination:       D_6 (LATCH)
+  Destination Clock: D_6_G falling
+
+  Data Path: A<2> to D_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  A_2_IBUF (A_2_IBUF)
+     LUT5:I0->O            2   0.097   0.515  A[4]_GND_5_o_AND_52_o1 (A[4]_GND_5_o_AND_52_o)
+     LUT3:I0->O            1   0.097   0.000  D_6_D (D_6_D)
+     LD:D                     -0.028          D_6
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'D_5_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            A<2> (PAD)
+  Destination:       D_5 (LATCH)
+  Destination Clock: D_5_G falling
+
+  Data Path: A<2> to D_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  A_2_IBUF (A_2_IBUF)
+     LUT5:I0->O            2   0.097   0.515  A[4]_GND_5_o_AND_54_o1 (A[4]_GND_5_o_AND_54_o)
+     LUT3:I0->O            1   0.097   0.000  D_5_D (D_5_D)
+     LD:D                     -0.028          D_5
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'D_4_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            A<4> (PAD)
+  Destination:       D_4 (LATCH)
+  Destination Clock: D_4_G falling
+
+  Data Path: A<4> to D_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  A_4_IBUF (A_4_IBUF)
+     LUT5:I0->O            2   0.097   0.515  A[4]_GND_5_o_AND_56_o1 (A[4]_GND_5_o_AND_56_o)
+     LUT3:I0->O            1   0.097   0.000  D_4_D (D_4_D)
+     LD:D                     -0.028          D_4
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'D_3_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            A<0> (PAD)
+  Destination:       D_3 (LATCH)
+  Destination Clock: D_3_G falling
+
+  Data Path: A<0> to D_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  A_0_IBUF (A_0_IBUF)
+     LUT5:I0->O            2   0.097   0.515  A[4]_GND_5_o_AND_58_o1 (A[4]_GND_5_o_AND_58_o)
+     LUT3:I0->O            1   0.097   0.000  D_3_D (D_3_D)
+     LD:D                     -0.028          D_3
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'D_29_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            A<1> (PAD)
+  Destination:       D_29 (LATCH)
+  Destination Clock: D_29_G falling
+
+  Data Path: A<1> to D_29
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  A_1_IBUF (A_1_IBUF)
+     LUT5:I0->O            2   0.097   0.515  A[4]_GND_5_o_AND_6_o1 (A[4]_GND_5_o_AND_6_o)
+     LUT3:I0->O            1   0.097   0.000  D_29_D (D_29_D)
+     LD:D                     -0.028          D_29
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'D_2_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            A<2> (PAD)
+  Destination:       D_2 (LATCH)
+  Destination Clock: D_2_G falling
+
+  Data Path: A<2> to D_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  A_2_IBUF (A_2_IBUF)
+     LUT5:I0->O            2   0.097   0.515  A[4]_GND_5_o_AND_60_o1 (A[4]_GND_5_o_AND_60_o)
+     LUT3:I0->O            1   0.097   0.000  D_2_D (D_2_D)
+     LD:D                     -0.028          D_2
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'D_30_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            A<0> (PAD)
+  Destination:       D_30 (LATCH)
+  Destination Clock: D_30_G falling
+
+  Data Path: A<0> to D_30
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  A_0_IBUF (A_0_IBUF)
+     LUT5:I0->O            2   0.097   0.515  A[4]_GND_5_o_AND_4_o1 (A[4]_GND_5_o_AND_4_o)
+     LUT3:I0->O            1   0.097   0.000  D_30_D (D_30_D)
+     LD:D                     -0.028          D_30
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'D_28_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            A<1> (PAD)
+  Destination:       D_28 (LATCH)
+  Destination Clock: D_28_G falling
+
+  Data Path: A<1> to D_28
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  A_1_IBUF (A_1_IBUF)
+     LUT5:I0->O            2   0.097   0.515  A[4]_GND_5_o_AND_8_o1 (A[4]_GND_5_o_AND_8_o)
+     LUT3:I0->O            1   0.097   0.000  D_28_D (D_28_D)
+     LD:D                     -0.028          D_28
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'D_27_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            A<2> (PAD)
+  Destination:       D_27 (LATCH)
+  Destination Clock: D_27_G falling
+
+  Data Path: A<2> to D_27
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  A_2_IBUF (A_2_IBUF)
+     LUT5:I0->O            2   0.097   0.515  A[4]_GND_5_o_AND_10_o1 (A[4]_GND_5_o_AND_10_o)
+     LUT3:I0->O            1   0.097   0.000  D_27_D (D_27_D)
+     LD:D                     -0.028          D_27
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'D_26_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            A<2> (PAD)
+  Destination:       D_26 (LATCH)
+  Destination Clock: D_26_G falling
+
+  Data Path: A<2> to D_26
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  A_2_IBUF (A_2_IBUF)
+     LUT5:I0->O            2   0.097   0.515  A[4]_GND_5_o_AND_12_o1 (A[4]_GND_5_o_AND_12_o)
+     LUT3:I0->O            1   0.097   0.000  D_26_D (D_26_D)
+     LD:D                     -0.028          D_26
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'D_25_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            A<2> (PAD)
+  Destination:       D_25 (LATCH)
+  Destination Clock: D_25_G falling
+
+  Data Path: A<2> to D_25
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  A_2_IBUF (A_2_IBUF)
+     LUT5:I0->O            2   0.097   0.515  A[4]_GND_5_o_AND_14_o1 (A[4]_GND_5_o_AND_14_o)
+     LUT3:I0->O            1   0.097   0.000  D_25_D (D_25_D)
+     LD:D                     -0.028          D_25
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'D_24_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            A<3> (PAD)
+  Destination:       D_24 (LATCH)
+  Destination Clock: D_24_G falling
+
+  Data Path: A<3> to D_24
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  A_3_IBUF (A_3_IBUF)
+     LUT5:I0->O            2   0.097   0.515  A[4]_GND_5_o_AND_16_o1 (A[4]_GND_5_o_AND_16_o)
+     LUT3:I0->O            1   0.097   0.000  D_24_D (D_24_D)
+     LD:D                     -0.028          D_24
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'D_23_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            A<3> (PAD)
+  Destination:       D_23 (LATCH)
+  Destination Clock: D_23_G falling
+
+  Data Path: A<3> to D_23
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  A_3_IBUF (A_3_IBUF)
+     LUT5:I0->O            2   0.097   0.515  A[4]_GND_5_o_AND_18_o1 (A[4]_GND_5_o_AND_18_o)
+     LUT3:I0->O            1   0.097   0.000  D_23_D (D_23_D)
+     LD:D                     -0.028          D_23
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'D_20_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            A<2> (PAD)
+  Destination:       D_20 (LATCH)
+  Destination Clock: D_20_G falling
+
+  Data Path: A<2> to D_20
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  A_2_IBUF (A_2_IBUF)
+     LUT5:I0->O            2   0.097   0.515  A[4]_GND_5_o_AND_24_o1 (A[4]_GND_5_o_AND_24_o)
+     LUT3:I0->O            1   0.097   0.000  D_20_D (D_20_D)
+     LD:D                     -0.028          D_20
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'D_22_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            A<3> (PAD)
+  Destination:       D_22 (LATCH)
+  Destination Clock: D_22_G falling
+
+  Data Path: A<3> to D_22
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  A_3_IBUF (A_3_IBUF)
+     LUT5:I0->O            2   0.097   0.515  A[4]_GND_5_o_AND_20_o1 (A[4]_GND_5_o_AND_20_o)
+     LUT3:I0->O            1   0.097   0.000  D_22_D (D_22_D)
+     LD:D                     -0.028          D_22
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'D_21_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            A<3> (PAD)
+  Destination:       D_21 (LATCH)
+  Destination Clock: D_21_G falling
+
+  Data Path: A<3> to D_21
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  A_3_IBUF (A_3_IBUF)
+     LUT5:I0->O            2   0.097   0.515  A[4]_GND_5_o_AND_22_o1 (A[4]_GND_5_o_AND_22_o)
+     LUT3:I0->O            1   0.097   0.000  D_21_D (D_21_D)
+     LD:D                     -0.028          D_21
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'D_19_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            A<2> (PAD)
+  Destination:       D_19 (LATCH)
+  Destination Clock: D_19_G falling
+
+  Data Path: A<2> to D_19
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  A_2_IBUF (A_2_IBUF)
+     LUT5:I0->O            2   0.097   0.515  A[4]_GND_5_o_AND_26_o1 (A[4]_GND_5_o_AND_26_o)
+     LUT3:I0->O            1   0.097   0.000  D_19_D (D_19_D)
+     LD:D                     -0.028          D_19
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'D_18_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            A<1> (PAD)
+  Destination:       D_18 (LATCH)
+  Destination Clock: D_18_G falling
+
+  Data Path: A<1> to D_18
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  A_1_IBUF (A_1_IBUF)
+     LUT5:I0->O            2   0.097   0.515  A[4]_GND_5_o_AND_28_o1 (A[4]_GND_5_o_AND_28_o)
+     LUT3:I0->O            1   0.097   0.000  D_18_D (D_18_D)
+     LD:D                     -0.028          D_18
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'D_17_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            A<0> (PAD)
+  Destination:       D_17 (LATCH)
+  Destination Clock: D_17_G falling
+
+  Data Path: A<0> to D_17
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  A_0_IBUF (A_0_IBUF)
+     LUT5:I0->O            2   0.097   0.515  A[4]_GND_5_o_AND_30_o1 (A[4]_GND_5_o_AND_30_o)
+     LUT3:I0->O            1   0.097   0.000  D_17_D (D_17_D)
+     LD:D                     -0.028          D_17
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'D_1_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            A<2> (PAD)
+  Destination:       D_1 (LATCH)
+  Destination Clock: D_1_G falling
+
+  Data Path: A<2> to D_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  A_2_IBUF (A_2_IBUF)
+     LUT5:I0->O            2   0.097   0.515  A[4]_GND_5_o_AND_62_o1 (A[4]_GND_5_o_AND_62_o)
+     LUT3:I0->O            1   0.097   0.000  D_1_D (D_1_D)
+     LD:D                     -0.028          D_1
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'D_0_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            A<0> (PAD)
+  Destination:       D_0 (LATCH)
+  Destination Clock: D_0_G falling
+
+  Data Path: A<0> to D_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  A_0_IBUF (A_0_IBUF)
+     LUT5:I0->O            2   0.097   0.515  A[4]_GND_5_o_AND_64_o1 (A[4]_GND_5_o_AND_64_o)
+     LUT3:I0->O            1   0.097   0.000  D_0_D (D_0_D)
+     LD:D                     -0.028          D_0
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'D_31_G'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              1.505ns (Levels of Logic = 3)
+  Source:            A<0> (PAD)
+  Destination:       D_31 (LATCH)
+  Destination Clock: D_31_G falling
+
+  Data Path: A<0> to D_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.795  A_0_IBUF (A_0_IBUF)
+     LUT5:I0->O            2   0.097   0.515  A[4]_PWR_5_o_AND_2_o1 (A[4]_PWR_5_o_AND_2_o)
+     LUT3:I0->O            1   0.097   0.000  D_31_D (D_31_D)
+     LD:D                     -0.028          D_31
+    ----------------------------------------
+    Total                      1.505ns (0.195ns logic, 1.310ns route)
+                                       (13.0% logic, 87.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'D_31_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            D_31 (LATCH)
+  Destination:       D<31> (PAD)
+  Source Clock:      D_31_G falling
+
+  Data Path: D_31 to D<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  D_31 (D_31)
+     OBUF:I->O                 0.000          D_31_OBUF (D<31>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'D_30_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            D_30 (LATCH)
+  Destination:       D<30> (PAD)
+  Source Clock:      D_30_G falling
+
+  Data Path: D_30 to D<30>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  D_30 (D_30)
+     OBUF:I->O                 0.000          D_30_OBUF (D<30>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'D_29_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            D_29 (LATCH)
+  Destination:       D<29> (PAD)
+  Source Clock:      D_29_G falling
+
+  Data Path: D_29 to D<29>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  D_29 (D_29)
+     OBUF:I->O                 0.000          D_29_OBUF (D<29>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'D_28_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            D_28 (LATCH)
+  Destination:       D<28> (PAD)
+  Source Clock:      D_28_G falling
+
+  Data Path: D_28 to D<28>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  D_28 (D_28)
+     OBUF:I->O                 0.000          D_28_OBUF (D<28>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'D_27_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            D_27 (LATCH)
+  Destination:       D<27> (PAD)
+  Source Clock:      D_27_G falling
+
+  Data Path: D_27 to D<27>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  D_27 (D_27)
+     OBUF:I->O                 0.000          D_27_OBUF (D<27>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'D_26_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            D_26 (LATCH)
+  Destination:       D<26> (PAD)
+  Source Clock:      D_26_G falling
+
+  Data Path: D_26 to D<26>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  D_26 (D_26)
+     OBUF:I->O                 0.000          D_26_OBUF (D<26>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'D_25_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            D_25 (LATCH)
+  Destination:       D<25> (PAD)
+  Source Clock:      D_25_G falling
+
+  Data Path: D_25 to D<25>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  D_25 (D_25)
+     OBUF:I->O                 0.000          D_25_OBUF (D<25>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'D_24_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            D_24 (LATCH)
+  Destination:       D<24> (PAD)
+  Source Clock:      D_24_G falling
+
+  Data Path: D_24 to D<24>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  D_24 (D_24)
+     OBUF:I->O                 0.000          D_24_OBUF (D<24>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'D_23_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            D_23 (LATCH)
+  Destination:       D<23> (PAD)
+  Source Clock:      D_23_G falling
+
+  Data Path: D_23 to D<23>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  D_23 (D_23)
+     OBUF:I->O                 0.000          D_23_OBUF (D<23>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'D_22_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            D_22 (LATCH)
+  Destination:       D<22> (PAD)
+  Source Clock:      D_22_G falling
+
+  Data Path: D_22 to D<22>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  D_22 (D_22)
+     OBUF:I->O                 0.000          D_22_OBUF (D<22>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'D_21_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            D_21 (LATCH)
+  Destination:       D<21> (PAD)
+  Source Clock:      D_21_G falling
+
+  Data Path: D_21 to D<21>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  D_21 (D_21)
+     OBUF:I->O                 0.000          D_21_OBUF (D<21>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'D_20_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            D_20 (LATCH)
+  Destination:       D<20> (PAD)
+  Source Clock:      D_20_G falling
+
+  Data Path: D_20 to D<20>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  D_20 (D_20)
+     OBUF:I->O                 0.000          D_20_OBUF (D<20>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'D_19_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            D_19 (LATCH)
+  Destination:       D<19> (PAD)
+  Source Clock:      D_19_G falling
+
+  Data Path: D_19 to D<19>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  D_19 (D_19)
+     OBUF:I->O                 0.000          D_19_OBUF (D<19>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'D_18_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            D_18 (LATCH)
+  Destination:       D<18> (PAD)
+  Source Clock:      D_18_G falling
+
+  Data Path: D_18 to D<18>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  D_18 (D_18)
+     OBUF:I->O                 0.000          D_18_OBUF (D<18>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'D_17_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            D_17 (LATCH)
+  Destination:       D<17> (PAD)
+  Source Clock:      D_17_G falling
+
+  Data Path: D_17 to D<17>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  D_17 (D_17)
+     OBUF:I->O                 0.000          D_17_OBUF (D<17>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'D_16_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            D_16 (LATCH)
+  Destination:       D<16> (PAD)
+  Source Clock:      D_16_G falling
+
+  Data Path: D_16 to D<16>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  D_16 (D_16)
+     OBUF:I->O                 0.000          D_16_OBUF (D<16>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'D_15_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            D_15 (LATCH)
+  Destination:       D<15> (PAD)
+  Source Clock:      D_15_G falling
+
+  Data Path: D_15 to D<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  D_15 (D_15)
+     OBUF:I->O                 0.000          D_15_OBUF (D<15>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'D_14_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            D_14 (LATCH)
+  Destination:       D<14> (PAD)
+  Source Clock:      D_14_G falling
+
+  Data Path: D_14 to D<14>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  D_14 (D_14)
+     OBUF:I->O                 0.000          D_14_OBUF (D<14>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'D_13_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            D_13 (LATCH)
+  Destination:       D<13> (PAD)
+  Source Clock:      D_13_G falling
+
+  Data Path: D_13 to D<13>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  D_13 (D_13)
+     OBUF:I->O                 0.000          D_13_OBUF (D<13>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'D_12_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            D_12 (LATCH)
+  Destination:       D<12> (PAD)
+  Source Clock:      D_12_G falling
+
+  Data Path: D_12 to D<12>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  D_12 (D_12)
+     OBUF:I->O                 0.000          D_12_OBUF (D<12>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'D_11_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            D_11 (LATCH)
+  Destination:       D<11> (PAD)
+  Source Clock:      D_11_G falling
+
+  Data Path: D_11 to D<11>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  D_11 (D_11)
+     OBUF:I->O                 0.000          D_11_OBUF (D<11>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'D_10_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            D_10 (LATCH)
+  Destination:       D<10> (PAD)
+  Source Clock:      D_10_G falling
+
+  Data Path: D_10 to D<10>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  D_10 (D_10)
+     OBUF:I->O                 0.000          D_10_OBUF (D<10>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'D_9_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            D_9 (LATCH)
+  Destination:       D<9> (PAD)
+  Source Clock:      D_9_G falling
+
+  Data Path: D_9 to D<9>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  D_9 (D_9)
+     OBUF:I->O                 0.000          D_9_OBUF (D<9>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'D_8_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            D_8 (LATCH)
+  Destination:       D<8> (PAD)
+  Source Clock:      D_8_G falling
+
+  Data Path: D_8 to D<8>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  D_8 (D_8)
+     OBUF:I->O                 0.000          D_8_OBUF (D<8>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'D_7_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            D_7 (LATCH)
+  Destination:       D<7> (PAD)
+  Source Clock:      D_7_G falling
+
+  Data Path: D_7 to D<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  D_7 (D_7)
+     OBUF:I->O                 0.000          D_7_OBUF (D<7>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'D_6_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            D_6 (LATCH)
+  Destination:       D<6> (PAD)
+  Source Clock:      D_6_G falling
+
+  Data Path: D_6 to D<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  D_6 (D_6)
+     OBUF:I->O                 0.000          D_6_OBUF (D<6>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'D_5_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            D_5 (LATCH)
+  Destination:       D<5> (PAD)
+  Source Clock:      D_5_G falling
+
+  Data Path: D_5 to D<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  D_5 (D_5)
+     OBUF:I->O                 0.000          D_5_OBUF (D<5>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'D_4_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            D_4 (LATCH)
+  Destination:       D<4> (PAD)
+  Source Clock:      D_4_G falling
+
+  Data Path: D_4 to D<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  D_4 (D_4)
+     OBUF:I->O                 0.000          D_4_OBUF (D<4>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'D_3_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            D_3 (LATCH)
+  Destination:       D<3> (PAD)
+  Source Clock:      D_3_G falling
+
+  Data Path: D_3 to D<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  D_3 (D_3)
+     OBUF:I->O                 0.000          D_3_OBUF (D<3>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'D_2_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            D_2 (LATCH)
+  Destination:       D<2> (PAD)
+  Source Clock:      D_2_G falling
+
+  Data Path: D_2 to D<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  D_2 (D_2)
+     OBUF:I->O                 0.000          D_2_OBUF (D<2>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'D_1_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            D_1 (LATCH)
+  Destination:       D<1> (PAD)
+  Source Clock:      D_1_G falling
+
+  Data Path: D_1 to D<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  D_1 (D_1)
+     OBUF:I->O                 0.000          D_1_OBUF (D<1>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'D_0_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            D_0 (LATCH)
+  Destination:       D<0> (PAD)
+  Source Clock:      D_0_G falling
+
+  Data Path: D_0 to D<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  D_0 (D_0)
+     OBUF:I->O                 0.000          D_0_OBUF (D<0>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.82 secs
+ 
+--> 
+
+Total memory usage is 4678540 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   33 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+
